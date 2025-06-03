@@ -1,0 +1,18 @@
+{
+    "stats_scaler": "",
+    "train_dataset": {
+        "X": "dataset/CICDOH20/train_X.npy",
+        "y": "dataset/CICDOH20/train_y.npy"
+    },
+    "agent_train_dataset": {
+        "X": "dataset/CICDOH20/train_X.npy"
+    },
+    "val_dataset": {
+        "X": "dataset/CICDOH20/test_X.npy",
+        "y": "dataset/CICDOH20/test_y.npy"
+    },
+    "test_dataset": {
+        "X": "dataset/CICDOH20/test_X.npy",
+        "y": "dataset/CICDOH20/test_y.npy"
+    }
+}

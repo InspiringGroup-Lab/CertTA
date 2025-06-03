@@ -1,0 +1,18 @@
+{
+    "stats_scaler": "",
+    "train_dataset": {
+        "X": "data/dataset/TIISSRC23/preprocessed/train_X.npy",
+        "y": "data/dataset/TIISSRC23/preprocessed/train_y.npy"
+    },
+    "agent_train_dataset": {
+        "X": "data/dataset/TIISSRC23/preprocessed/train_X.npy"
+    },
+    "val_dataset": {
+        "X": "data/dataset/TIISSRC23/preprocessed/valid_X.npy",
+        "y": "data/dataset/TIISSRC23/preprocessed/valid_y.npy"
+    },
+    "test_dataset": {
+        "X": "data/dataset/TIISSRC23/preprocessed/test_X.npy",
+        "y": "data/dataset/TIISSRC23/preprocessed/test_y.npy"
+    }
+}

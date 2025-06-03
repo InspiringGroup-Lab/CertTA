@@ -1,0 +1,25 @@
+{
+    "beta_length": 50,
+    "beta_time_ms": 10,
+    "pr_sel": 0.2,
+
+    "sigma_vrs": 0.03,
+
+    "lambda_shape": 0.001,
+    "feature_noise_distribution": "gaussian",
+
+    "feature_num": 175,
+    "maxAE": 10,
+    "FMgrace": 3,
+    "beta": 0,
+    "normalizer": null,
+
+    "optimizer": "adamw",
+    "scheduler": "linear",
+    "batch_size": 64,
+    "epochs_num": 500,
+    "early_stop": 200,
+    "warmup": 0.01,
+    "learning_rate": 1e-3,
+    "weight_decay": 0.01
+}

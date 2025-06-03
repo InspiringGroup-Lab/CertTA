@@ -1,0 +1,8 @@
+{
+    "clusters_per_label": 2,
+    "feature_num": 175,
+    "normalizer": null,
+    
+    "epochs_num": 1,
+    "early_stop": null
+}

@@ -1,0 +1,16 @@
+{
+    "feature_num": 175,
+    "maxAE": 30,
+    "FMgrace": 3,
+    "alpha": 1e-3,
+    "normalizer": null,
+
+    "optimizer": "adamw",
+    "scheduler": "linear",
+    "batch_size": 64,
+    "epochs_num": 200,
+    "early_stop": 50,
+    "warmup": 0.01,
+    "learning_rate": 1e-3,
+    "weight_decay": 0.01
+}

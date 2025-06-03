@@ -1,0 +1,6 @@
+{
+    "Benign": 0,
+    "DNS2TCP": 1,
+    "DNSCat2": 2,
+    "Iodine": 3
+}

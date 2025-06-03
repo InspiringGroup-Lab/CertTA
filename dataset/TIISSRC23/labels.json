@@ -1,0 +1,7 @@
+{
+    "Audio": 0,
+    "Video": 1,
+    "BruteForce_http": 2,
+    "BruteForce_telnet": 3,
+    "Mirai": 4
+}

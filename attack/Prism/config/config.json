@@ -1,0 +1,19 @@
+{
+    "dataset": {
+        "CICDOH2020": {
+            "train": "/home/xyy/mydata/certta/Amoeba/data/dataset/CICDOH2020/json/train.json",
+            "valid": "/home/xyy/mydata/certta/Amoeba/data/dataset/CICDOH2020/json/valid.json",
+            "test": "/home/xyy/mydata/certta/Amoeba/data/dataset/CICDOH2020/json/test.json"
+        },
+        "CICIOT2023": {
+            "train": "/home/xyy/mydata/certta/Amoeba/data/dataset/CICIOT2023/json/train.json",
+            "valid": "/home/xyy/mydata/certta/Amoeba/data/dataset/CICIOT2023/json/valid.json",
+            "test": "/home/xyy/mydata/certta/Amoeba/data/dataset/CICIOT2023/json/test.json"
+        },
+        "TIISSRC23": {
+            "train": "/home/xyy/mydata/certta/Amoeba/data/dataset/TIISSRC23/json/train.json",
+            "valid": "/home/xyy/mydata/certta/Amoeba/data/dataset/TIISSRC23/json/valid.json",
+            "test": "/home/xyy/mydata/certta/Amoeba/data/dataset/TIISSRC23/json/test.json"
+        }
+    }
+}

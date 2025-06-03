@@ -1,0 +1,15 @@
+{
+    "beta_length": 100,
+    "beta_time_ms": 20,
+    "pr_sel": 0.2,
+
+    "sigma_vrs": 80,
+    
+    "Wseg": 3,
+    "C": 1,
+    "knn_neighbors": 3,
+
+    "epochs_num": 1,
+    "augment_times": 5,
+    "early_stop": null
+}

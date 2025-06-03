@@ -1,0 +1,10 @@
+{
+    "Wseg": 5,
+    "C": 1,
+
+    "Wwin": 10,
+    "Kc": 100,
+
+    "epochs_num": 1,
+    "early_stop": null
+}

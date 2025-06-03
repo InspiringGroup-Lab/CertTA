@@ -1,0 +1,55 @@
+{
+    "beta_length": 200,
+    "beta_time_ms": 40,
+    "pr_sel": 0.1,
+
+    "sigma_vrs": 80,
+
+    "lambda_shape": 0.01,
+    "feature_noise_distribution": "gaussian",
+    
+    "payload_length": 64,
+    "payload_packet": 5,
+    "start_index": 28,
+    "add_sep": true,
+
+    "pretrained_model_path": "./model/TrafficFormer/models/pretrain_model.bin",
+    "vocab_path": "./model/TrafficFormer/models/encryptd_vocab.txt",
+    "spm_model_path": false,
+    "bert_config_path": "./model/TrafficFormer/models/bert/base_config.json",
+    
+    "pooling": "first",
+    "tokenizer": "bert",
+    "embedding": "word_pos_seg",
+    "max_seq_length": 512,
+    "relative_position_embedding": false,
+    "relative_attention_buckets_num": 32,
+    "remove_embedding_layernorm": false,
+    "remove_attention_scale": false,
+    "encoder": "transformer",
+    "mask": "fully_visible",
+    "layernorm_positioning": "post",
+    "feed_forward": "dense",
+    "remove_transformer_bias": false,
+    "layernorm": "normal",
+    "bidirectional": false,
+    "factorized_embedding_parameterization": false,
+    "parameter_sharing": false,
+
+    "is_moe": false,
+    "fp16": false,
+    "fp16_opt_level": "01",
+    "seq_length": 320,
+    "report_steps": 100,
+    "soft_targets": false,
+    "soft_alpha": 0.5,
+    
+    "optimizer": "adamw",
+    "scheduler": "linear",
+    "batch_size": 64,
+    "epochs_num": 200,
+    "early_stop": 50,
+    "warmup": 0.1,
+    "learning_rate": 6e-5,
+    "weight_decay": 0.01
+}

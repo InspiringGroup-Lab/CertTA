@@ -1,0 +1,14 @@
+{
+    "beta_length": 70,
+    "beta_time_ms": 20,
+    "pr_sel": 0.15,
+
+    "sigma_vrs": 0.03,
+    
+    "feature_num": 175,
+    "normalizer": null,
+    
+    "epochs_num": 1,
+    "augment_times": 5,
+    "early_stop": null
+}

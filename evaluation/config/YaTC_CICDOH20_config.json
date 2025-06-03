@@ -1,0 +1,30 @@
+{
+    "beta_length": 200,
+    "beta_time_ms": 40,
+    "pr_sel": 0.1,
+
+    "sigma_vrs": 80,
+
+    "lambda_shape": 0.01,
+    "feature_noise_distribution": "gaussian",
+    
+    "input_packets": 5,
+    "header_bytes": 80,
+    "payload_bytes": 240,
+    "row_bytes": 40,
+
+    "pretrained_model_path": "./model/YaTC/pretrained-model.pth",
+    
+    "drop_path": 0.1,
+
+    "batch_size": 64,
+    "epochs_num": 200,
+    "early_stop": 50,
+    "warmup_epochs": 20,
+    "base_learning_rate": 2e-3,
+    "min_learning_rate": 1e-6,
+    "weight_decay": 0.05,
+    "layer_decay": 0.75,
+    "optimizer": "adamw",
+    "label_smoothing": 0.1
+}
