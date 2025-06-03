@@ -26,7 +26,7 @@ Note:
 
 * The software environment is provided in `environment.yml`. 
 
-* Unless otherwise specified, the codes should be run in the root directory of this repository to properly import dependency files.
+* Unless otherwise specified, the codes should be run in the root directory of this repository (i.e., the `CertTA_public` directory) to properly import dependency files.
 
 * Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580293).
 
