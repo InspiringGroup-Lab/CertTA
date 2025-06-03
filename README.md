@@ -28,7 +28,7 @@ Note:
 
 * Unless otherwise specified, the codes should be run in the root directory of this repository (i.e., the `CertTA_public` directory) to properly import dependency files.
 
-* Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580293).
+* Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://zenodo.org/records/15580293?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijc0ZTYzZmUwLTVlYjQtNDZmOS1iNzM2LTkzZmRmMTAzM2ZlOCIsImRhdGEiOnt9LCJyYW5kb20iOiI5ZTNhYWRlYjBhOTI1ODc2ZDdlNDZlNmM5NDhiZTY4NiJ9.4JTcwwJq-2y3GQIsXA4sEMCbY98XN_HqBM6ws93WXXG3fsCWLH9OlVID2bK8w9RjzRG0kWZrFJmyeU5NGO8lVA).
 
 # Contact
 
