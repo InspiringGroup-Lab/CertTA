@@ -43,7 +43,7 @@ python evaluation/plot_certifiedacc_cdf.py --dataset DATASET_NAME --model MODEL_
 
 ### Evaluate Base/Certified Traffic Analysis Models on Adversarial Datasets
 
-Follow the instructions in [/CertTA_public/attacks/]() to generate adversarial perturbations based on Blanket, Amoeba and Prism. Then,
+Follow the instructions in [/CertTA_public/attacks/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/attack) to generate adversarial perturbations based on Blanket, Amoeba and Prism. Then,
 
 
 ```

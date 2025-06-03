@@ -14,7 +14,7 @@ python integration/train_anomaly_detector.py --dataset DATASET_NAME --model MODE
 
 ### Evaluate Anomaly Detectors
 
-Follow the instructions in [/CertTA_public/attacks/]() to generate adversarial perturbations based on Blanket, Amoeba and Prism. Then,
+Follow the instructions in [/CertTA_public/attacks/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/attack) to generate adversarial perturbations based on Blanket, Amoeba and Prism. Then,
 
 ```
 python integration/test_anomaly_detector.py --dataset DATASET_NAME --attack ATTACK_NAME --model MODEL_NAME --FPR_threshold 0.01
@@ -30,7 +30,7 @@ python integration/test_anomaly_detector.py --dataset DATASET_NAME --attack ATTA
 ### Evaluate the Integrated System
 
 
-Follow the instructions in [/CertTA_public/evaluation/]() to train CertTA-certified traffic analysis models. Then,
+Follow the instructions in [/CertTA_public/evaluation/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/evaluation) to train CertTA-certified traffic analysis models. Then,
 
 ```
 python integration/test_integrated_system.py --dataset DATASET_NAME --attack ATTACK_NAME --model_AD MODEL_NAME_AD --FPR_threshold 0.01  --model MODEL_NAME --augment CertTA --smoothed CertTA
