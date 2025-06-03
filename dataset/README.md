@@ -4,7 +4,9 @@ There are two directories for each dataset (CICDOH20 and TIISSRC23):
 
 1. `pcap/`
 
-  -  Each class in the dataset corresponds to a subdirectory in `pcap/`, which contains the PCAP files for 5-tuple-identified flow sampels.
+  *  Each class in the dataset corresponds to a subdirectory in `pcap/`, which contains the PCAP files for 5-tuple-identified flow sampels.
+  
+  *  Due to the repository size limit of Github, these PCAP files are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580293).
 
 2. `json/`
 

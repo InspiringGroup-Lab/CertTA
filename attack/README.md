@@ -42,7 +42,7 @@ pip install -r attack/Amoeba/requirements.txt
 python attack/Amoeba/preprocess_dataset.py
 ```
 
-* This step will preprocess the dataset and save the processed data in the `/CertTA_public/attack/Amoeba/dataset/` directory.
+* This step will preprocess the CICDOH20 and TIISSRC23 datasets and save the processed data in the `/CertTA_public/attack/Amoeba/dataset/` directory.
 
 ### Switch to the Amoeba directory
 
@@ -55,6 +55,8 @@ cd attack/Amoeba
 ```
 python src/train_amoeba.py --dataset DATASET_NAME
 ```
+
+* Choose DATASET_NAME from CICDOH20 and TIISSRC23.
 
 * Based on reinforcement learning, Amoeba adaptively trains its attack model to evade the classification of a CertTA-certified DF model.
 
@@ -75,6 +77,9 @@ python src/generate_attack.py --dataset DATASET_NAME --attack_beta_length 200 --
 ```
 python attack/Prism/run_prism.py --dataset DATASET_NAME --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 200 --attack_insert_pkts 2
 ```
+
+* Choose DATASET_NAME from CICDOH20 and TIISSRC23.
+  
 * Specify the attack intensities by setting attack-related paramters (i.e., `attack_beta_length`, `attack_beta_time_ms`, `attack_pr_sel`,  `attack_r_additive_star` and `attack_insert_pkts`).
   
 * The adversarial perturbations (including packet length padding, timing delays and packet insertion) on test flows will be saved in a `attack.json` file in the `/CertTA_public/attack/Prism/DATASET_NAME/` directory.
