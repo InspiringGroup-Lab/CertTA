@@ -432,6 +432,8 @@ def main():
         args.normalizer = create_normalizer(args, train_flows)
     
     if args.augment == 'BARS':
+        if model in ['kFP', 'Whisper']:
+            raise Exception('BARS is not applicable to the {} model'.format(args.model))
         print('Loading BARS noise generators.')
         args.bars_dir = './model/{}/save/{}/BARS/'.format(args.model, args.dataset)
         print('bars dir: {}'.format(args.bars_dir))

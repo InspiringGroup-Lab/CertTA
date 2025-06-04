@@ -44,7 +44,7 @@ def main():
             'beta_time_ms': args.beta_time_ms,
             'pr_sel': args.pr_sel,
         }
-    elif args.augment == 'BARS':
+    elif args.smoothed == 'BARS' or args.augment == 'BARS':
         print('Loading BARS noise generators')
         if args.model in ['kFP', 'Whisper']:
             raise Exception('BARS is not applicable because gradient descent can not be performed!')

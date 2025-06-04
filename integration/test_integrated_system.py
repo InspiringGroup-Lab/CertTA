@@ -265,6 +265,9 @@ def main():
             'beta_time_ms': args.beta_time_ms,
             'pr_sel': args.pr_sel,
         }
+    elif args.smoothed == 'BARS' or args.augment == 'BARS':
+        if model in ['kFP', 'Whisper']:
+            raise Exception('BARS is not applicable to the {} model'.format(args.model))
 
     args.save_dir_AD = './model/{}/save/{}/{}_AD{}/'.format(args.model_AD, args.dataset, args.model_AD, '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
     args.save_dir = './model/{}/save/{}/{}{}/'.format(args.model, args.dataset, model_name_generator(args), '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
