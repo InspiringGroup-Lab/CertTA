@@ -1,5 +1,4 @@
 import os
-import math
 import torch
 import random
 import binascii
@@ -65,7 +64,7 @@ def smoothing_joint(flow, smoothing_params, pcap_level=False):
         new_iat = [t + np.random.exponential(beta_time_ms) * 0.001 for t in new_iat]
     new_timestamp = [0]
     for t in new_iat[1:]:
-        new_timestamp.append(new_timestamp[-1] + float(t) * np.sqrt(2 / math.pi))
+        new_timestamp.append(new_timestamp[-1] + float(t) * np.sqrt(2 / np.pi))
         
     # packet length padding
     pad = [0] * new_packet_num
@@ -75,7 +74,7 @@ def smoothing_joint(flow, smoothing_params, pcap_level=False):
         pad = [int(np.random.exponential(beta_length)) for _ in range(new_packet_num)]
     direction_length = flow['direction_length']
     new_direction_length = [direction_length[pos] for pos in sel_pos]
-    new_direction_length = [(length + np.sign(length) * int(pad[i] * np.sqrt(2 / math.pi))) 
+    new_direction_length = [(length + np.sign(length) * int(pad[i] * np.sqrt(2 / np.pi))) 
                                 for i, length in enumerate(new_direction_length)]
     # if the first packet is deleted, reset the direction of the new first packet as +1
     if new_direction_length[0] < 0:

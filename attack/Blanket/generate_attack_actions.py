@@ -79,9 +79,7 @@ def main():
     add_noiser = AddNoiser(args.max_flow_length, args.hidden_dim)
     load_or_initialize_parameters(add_noiser, args.save_dir + 'add_noiser.bin')
     add_noiser = add_noiser.to(args.device)
-    args.attack_beta_length = int(args.attack_beta_length * np.sqrt(2 / np.pi))
-    args.attack_beta_time_ms = args.attack_beta_time_ms * np.sqrt(2 / np.pi)
-
+    
     insert_noiser = InsertNoiser(args.max_flow_length, args.hidden_dim)
     load_or_initialize_parameters(insert_noiser, args.save_dir + 'insert_noiser.bin')
     insert_noiser = insert_noiser.to(args.device)

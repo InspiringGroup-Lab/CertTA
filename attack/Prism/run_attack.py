@@ -505,8 +505,6 @@ def fit_attack_intensity(attack_data, args):
     """
     base_insert_len = 1000
     base_delay = 0.05
-    args.attack_beta_length = int(args.attack_beta_length * np.sqrt(2 / np.pi))
-    args.attack_beta_time_ms = args.attack_beta_time_ms * np.sqrt(2 / np.pi)
         
     processed_flows = []
         

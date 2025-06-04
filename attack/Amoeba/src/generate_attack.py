@@ -114,8 +114,6 @@ base_delay = 0.05
 # prob = -0.6 + l2_norm/20
 # bias = 1.1 + l2_norm/20
 # delay_prob = 0.8
-args.attack_beta_length = int(args.attack_beta_length * np.sqrt(2 / np.pi))
-args.attack_beta_time_ms = args.attack_beta_time_ms * np.sqrt(2 / np.pi)
 
 # max_insert_pkts = max_insert_pkts_list[c_idx]
 # print(f"max_insert_pkts: {max_insert_pkts}, l2_norm: {l2_norm}")

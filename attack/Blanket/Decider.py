@@ -16,8 +16,6 @@ def PerturbationFunction(x,
     
     ##########################################################################
     # Additive Perturbations
-    attack_beta_length = int(attack_beta_length * np.sqrt(2 / np.pi))
-    attack_beta_time_ms = attack_beta_time_ms * np.sqrt(2 / np.pi)
     # 1. mask the noise by existing packets
     mask = (direction_length != 0)
     true_flow_length = torch.sum(mask, dim=1)
