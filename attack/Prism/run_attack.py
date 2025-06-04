@@ -505,6 +505,8 @@ def fit_attack_intensity(attack_data, args):
     """
     base_insert_len = 1000
     base_delay = 0.05
+    args.attack_beta_length = int(args.attack_beta_length * np.sqrt(2 / np.pi))
+    args.attack_beta_time_ms = args.attack_beta_time_ms * np.sqrt(2 / np.pi)
         
     processed_flows = []
         
@@ -700,11 +702,6 @@ if __name__ == "__main__":
         raise ValueError("Invalid mode")
     print("generate adversarial examples done!")
 
-    
-    # generate adversarial actions and save adversarial examples
-    adversarial_results = generate_adv_actions(adversarial_data)
-    fitted_attack_data = fit_attack_intensity(adversarial_results, args)
-    
     args.save_dir = f"./attack/Prism/{args.dataset}/"
     if os.path.exists(args.save_dir) is False:
         os.makedirs(args.save_dir)
@@ -712,6 +709,10 @@ if __name__ == "__main__":
         args.attack_beta_length, args.attack_beta_time_ms, args.attack_pr_sel, args.attack_r_additive_star, args.attack_insert_pkts)
     if os.path.exists(args.save_dir) is False:
         os.makedirs(args.save_dir)
+
+     # generate adversarial actions and save adversarial examples
+    adversarial_results = generate_adv_actions(adversarial_data)
+    fitted_attack_data = fit_attack_intensity(adversarial_results, args)
         
     with open(args.save_dir + f"attack.json", "w") as f:
         json.dump(fitted_attack_data, f, ensure_ascii=False, indent=1)
