@@ -7,7 +7,7 @@
 
 </div>
 
-> This repository contains the artifacts of paper **CertTA: Certified Robustness Made Practical for Learning-Based Traffic Analysis**, which has been accepeted by USENIX Security 2025. A [Zenodo repository](https://zenodo.org/records/15580293?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijc0ZTYzZmUwLTVlYjQtNDZmOS1iNzM2LTkzZmRmMTAzM2ZlOCIsImRhdGEiOnt9LCJyYW5kb20iOiI5ZTNhYWRlYjBhOTI1ODc2ZDdlNDZlNmM5NDhiZTY4NiJ9.4JTcwwJq-2y3GQIsXA4sEMCbY98XN_HqBM6ws93WXXG3fsCWLH9OlVID2bK8w9RjzRG0kWZrFJmyeU5NGO8lVA) is hosted synchronously to facilitate the use of these artifacts.
+> This repository contains the artifacts of paper **CertTA: Certified Robustness Made Practical for Learning-Based Traffic Analysis**, which has been accepeted by USENIX Security 2025. A [Zenodo repository](https://doi.org/10.5281/zenodo.15580293) is hosted synchronously to facilitate the use of these artifacts.
 
 # Repository Overview
 
@@ -27,7 +27,7 @@ Our artifact includes the following directories:
 
 * [integration/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/integration) contains the source codes for building and evaluating the integrated system of anomaly detectors and certified traffic analysis models.
 
-> Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://zenodo.org/records/15580293?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijc0ZTYzZmUwLTVlYjQtNDZmOS1iNzM2LTkzZmRmMTAzM2ZlOCIsImRhdGEiOnt9LCJyYW5kb20iOiI5ZTNhYWRlYjBhOTI1ODc2ZDdlNDZlNmM5NDhiZTY4NiJ9.4JTcwwJq-2y3GQIsXA4sEMCbY98XN_HqBM6ws93WXXG3fsCWLH9OlVID2bK8w9RjzRG0kWZrFJmyeU5NGO8lVA).
+> Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580293).
 
 ## Environment Setup
 
