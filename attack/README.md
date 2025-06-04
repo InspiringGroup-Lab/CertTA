@@ -4,7 +4,7 @@
 
 ### Train the substitute DF model for black-box attack
 
-```
+```bash
 python evaluation/train.py --dataset DATASET_NAME --model DF
 ```
 
@@ -12,7 +12,7 @@ python evaluation/train.py --dataset DATASET_NAME --model DF
 
 ### Train the Blanket attack model
 
-```
+```bash
 python attack/Blanket/train.py --dataset DATASET_NAME --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 200 --attack_insert_pkts 2
 ```
 
@@ -22,7 +22,7 @@ python attack/Blanket/train.py --dataset DATASET_NAME --attack_beta_length 200 -
 
 ### Generate adversarial perturbations on test flows
 
-```
+```bash
 python attack/Blanket/generate_attack_actions.py --dataset DATASET_NAME --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 200 --attack_insert_pkts 2
 ```
 
@@ -32,13 +32,13 @@ python attack/Blanket/generate_attack_actions.py --dataset DATASET_NAME --attack
 
 ### Prepare the environment
 
-```
+```bash
 pip install -r attack/Amoeba/requirements.txt
 ```
 
 ### Preprocess the dataset
 
-```
+```bash
 python attack/Amoeba/preprocess_dataset.py
 ```
 
@@ -46,13 +46,13 @@ python attack/Amoeba/preprocess_dataset.py
 
 ### Switch to the Amoeba directory
 
-```
+```bash
 cd attack/Amoeba
 ```
 
 ### Train the Amoeba attack model
 
-```
+```bash
 python src/train_amoeba.py --dataset DATASET_NAME
 ```
 
@@ -64,7 +64,7 @@ python src/train_amoeba.py --dataset DATASET_NAME
 
 ### Generate adversarial perturbations on test flows
 
-```
+```bash
 python src/generate_attack.py --dataset DATASET_NAME --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 200 --attack_insert_pkts 2
 ```
 
@@ -74,7 +74,7 @@ python src/generate_attack.py --dataset DATASET_NAME --attack_beta_length 200 --
 
 ## 3. Prism
 
-```
+```bash
 python attack/Prism/run_prism.py --dataset DATASET_NAME --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 200 --attack_insert_pkts 2
 ```
 

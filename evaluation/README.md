@@ -3,7 +3,7 @@
 
 ### Train Base Traffic Analysis Models
 
-```
+```bash
 python evaluation/train.py --dataset DATASET_NAME --model MODEL_NAME --augment CERTIFICATION_METHOD_NAME 
 ```
 
@@ -19,7 +19,7 @@ python evaluation/train.py --dataset DATASET_NAME --model MODEL_NAME --augment C
 
 ### Evaluate Base/Certified Traffic Analysis Models on Clean Datasets
 
-```
+```bash
 python evaluation/test.py --dataset DATASET_NAME --model MODEL_NAME --augment CERTIFICATION_METHOD_NAME --smoothed CERTIFICATION_METHOD_NAME
 ```
 
@@ -27,13 +27,13 @@ python evaluation/test.py --dataset DATASET_NAME --model MODEL_NAME --augment CE
 
 * For each flow, a dictionary instance will be saved to record the information required for accuracy meassurement and robustness region derivation, such as the original flow label, the predicted class and the corresponding probability, etc. These classification results of test flows will be saved as json files in the `/CertTA_public/model/MODEL_NAME/save/DATASET_NAME/` directory. 
 
-```
+```bash
 python evaluation/collect_classification_results.py --dataset DATASET_NAME --model MODEL_NAME --augment CERTIFICATION_METHOD_NAME --smoothed CERTIFICATION_METHOD_NAME
 ```
 
 * By running `collect_classification_results.py`, the classification results saved by `test.py` will be collected to calculate the accuracy/precision/recall/f1-score of each traffic class and their macro aggregation. These metrics will be saved as a `empirical_acc.txt` file in the same directory of the classification results.
 
-```
+```bash
 python evaluation/plot_certifiedacc_cdf.py --dataset DATASET_NAME --model MODEL_NAME --augment CERTIFICATION_METHOD_NAME --smoothed CERTIFICATION_METHOD_NAME
 ```
 
@@ -46,7 +46,7 @@ python evaluation/plot_certifiedacc_cdf.py --dataset DATASET_NAME --model MODEL_
 Follow the instructions in [/CertTA_public/attacks/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/attack) to generate adversarial perturbations based on Blanket, Amoeba and Prism. Then,
 
 
-```
+```bash
 python evaluation/test.py --dataset DATASET_NAME --model MODEL_NAME --augment CERTIFICATION_METHOD_NAME --smoothed CERTIFICATION_METHOD_NAME --attack ATTACK_NAME
 ```
 
@@ -56,7 +56,7 @@ python evaluation/test.py --dataset DATASET_NAME --model MODEL_NAME --augment CE
 
 * The classification results of adversarial flows will be saved as json files in the `/CertTA_public/model/MODEL_NAME/save/DATASET_NAME/` directory. 
 
-```
+```bash
 python evaluation/collect_classification_results.py --dataset DATASET_NAME --model MODEL_NAME --augment CERTIFICATION_METHOD_NAME --smoothed CERTIFICATION_METHOD_NAME --attack ATTACK_NAME
 ```
 

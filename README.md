@@ -36,10 +36,12 @@ To ensure the proper functioning of our artifacts, please follow the commands be
 1. Ensure that you have `conda` installed on your system. If you do not have `conda`, you can install it as part of the Anaconda distribution or Miniconda.
 2. Open a terminal or command prompt.
 3. Create a new conda environment with the name of your choice (e.g., `CertTA`) and intall all the required packages listed in `environment.yml`:
+   
    ```bash
    conda create -n CertTA -f environment.yml
    ```
 4. Once the environment is created, activate it by running:
+   
    ```bash
    conda activate CertTA
    ```
