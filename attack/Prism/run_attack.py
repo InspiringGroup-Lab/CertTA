@@ -67,109 +67,7 @@ def temporal_feature_learning(args, train_data):
         basic_feature[label] = basic_feature[label] + [(max_feature + 4)]
         print("basic_feature: ", basic_feature[label])
         
-    return basic_feature
-
-# def temporal_feature_learning(args, train_data):
-#     feature_count = {}
-#     for flow in train_data:
-#         label = flow["label"]
-#         if label not in feature_count.keys():
-#             feature_count[label] = {}
-#         for pkt in flow["packets"]:
-#             # ignore packets with direction -1
-#             pkt_direction = pkt[0]
-#             # if pkt_direction == -1:
-#             #     continue
-
-#             pkt_length = pkt[1]
-#             if pkt_length not in feature_count[label].keys():
-#                 feature_count[label][pkt_length] = 0
-#             feature_count[label][pkt_length] += 1
-#     # sort features by frequency
-#     # basic_feature_format: [bf_value, bf_count]
-#     basic_features_count = {}
-#     for label in feature_count.keys():
-#         basic_features_count[label] = sorted(feature_count[label].items(), key=lambda x: x[1], reverse=True)
-    
-#     # select top 20 features
-#     basic_feature = {}
-#     for label in basic_features_count.keys():
-#         bf_list = [item[0] for item in basic_features_count[label][:args.basic_feature_num]]
-        
-#         label_feature = basic_features_count[label]
-#         max_bf = sorted(bf_list, reverse=True)[0]
-#         remaining_feature = [item for item in label_feature if item[0] > max_bf]
-        
-#         print("label", label)
-#         print("remaining_feature: ", len(remaining_feature))
-#         print("remaining_feature: ", remaining_feature)
-        
-#         remaining_feature = sorted(remaining_feature, key=lambda x: x[1], reverse=True)
-        
-#         remaining_bf = [item[0] for item in remaining_feature[:args.long_feature_num]]
-
-#         basic_feature[label] = bf_list + remaining_bf
-        
-#     return basic_feature
-
-
-# def temporal_feature_learning(args, train_data):
-#     feature_count = {}
-#     for flow in train_data:
-#         label = flow["label"]
-#         if label not in feature_count.keys():
-#             feature_count[label] = {}
-#         for pkt in flow["packets"]:
-#             # ignore packets with direction -1
-#             pkt_direction = pkt[0]
-#             if pkt_direction == -1:
-#                 continue
-
-#             pkt_length = pkt[1]
-#             if pkt_length not in feature_count[label].keys():
-#                 feature_count[label][pkt_length] = 0
-#             feature_count[label][pkt_length] += 1
-#     # sort features by frequency
-#     # basic_feature_format: [bf_value, bf_count]
-#     basic_features_count = {}
-#     for label in feature_count.keys():
-#         basic_features_count[label] = sorted(feature_count[label].items(), key=lambda x: x[0], reverse=False)
-
-#     basic_feature = {}
-#     for label in basic_features_count.keys():
-#         feature_list = basic_features_count[label]
-#         # print("feature_list: ", feature_list)
-#         tot_cnt = 0
-#         for bf, cnt in feature_list:
-#             # print("bf: ", bf)
-#             # print("cnt: ", cnt)
-#             tot_cnt += cnt
-#         bin_size = tot_cnt // args.bin_count
-#         feat_bins = []
-#         current_bin = {}
-#         current_bin_cnt = 0
-#         for bf, cnt in feature_list:
-#             current_bin[bf] = cnt
-#             current_bin_cnt += cnt
-#             if current_bin_cnt >= bin_size:
-#                 print("current_bin_cnt: ", current_bin_cnt)
-#                 feat_bins.append(current_bin)
-#                 current_bin = {}
-#                 current_bin_cnt = 0
-#         if current_bin_cnt > 0:
-#             feat_bins.append(current_bin)
-#             print("current_bin_cnt: ", current_bin_cnt)
-#         bin_bf = []
-#         for i in range(len(feat_bins)):
-#             feat_bins[i] = sorted(feat_bins[i].items(), key=lambda x: x[1], reverse=True)
-#             print("len(feat_bins[i]): ", len(feat_bins[i]))
-#             bin_bf += [item[0] for item in feat_bins[i][:args.basic_feature_num // args.bin_count]]
-#         basic_feature[label] = bin_bf
-#         print(args.basic_feature_num // args.bin_count)
-#         print("basic_feature: ", basic_feature[label])
-#         assert len(basic_feature[label]) == args.basic_feature_num
-#     return basic_feature
-    
+    return basic_feature    
     
 def classify_and_adjust_flows(args, basic_features, data):
     adjusted_data = {}
@@ -618,11 +516,6 @@ def fit_attack_intensity(attack_data, args):
                     })
         new_n = len([action for action in new_actions if action['action'] == 'padding' or action['action'] == 'inaction'])
         assert new_n == n, f"new_n: {new_n}, n: {n}"
-        validate_budget = torch.tensor([(action['value']/ args.attack_beta_length) **2 + (action['added_delay'] * 1000 / args.attack_beta_time_ms) **2 for action in new_actions if action['action'] == 'padding' or action['action'] == 'inaction'])
-        tops = torch.argsort(validate_budget, descending = True)
-        tops_d = tops[:d]
-        # assert torch.sum(validate_budget[tops_d]) <= (l2_norm ** 2), f"l2_norm: {torch.sum(validate_budget[tops_d]) ** 0.5}, l2_norm_target: {l2_norm} , choice: {choice}"
-        
         
         processed_flows.append({
             'actions': new_actions,

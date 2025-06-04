@@ -232,11 +232,6 @@ for flow in attack_data:
                 })
     new_n = len([action for action in new_actions if action['action'] == 'padding' or action['action'] == 'inaction'])
     assert new_n == n, f"new_n: {new_n}, n: {n}"
-    validate_budget = torch.tensor([(action['value']/ args.attack_beta_length) **2 + (action['added_delay'] * 1000 / args.attack_beta_time_ms) **2 for action in new_actions if action['action'] == 'padding' or action['action'] == 'inaction'])
-    tops = torch.argsort(validate_budget, descending = True)
-    tops_d = tops[:d]
-    # assert torch.sum(validate_budget[tops_d]) <= (l2_norm ** 2), f"l2_norm: {torch.sum(validate_budget[tops_d]) ** 0.5}, l2_norm_target: {l2_norm} , choice: {choice}"
-    
     
     processed_flows.append({
         'actions': new_actions,
