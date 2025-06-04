@@ -1,4 +1,4 @@
-name: certta
+name: CertTA
 channels:
   - pytorch
   - nvidia
