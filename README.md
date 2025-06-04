@@ -58,7 +58,7 @@ To ensure the proper functioning of our artifacts, please follow the commands be
 * In [attack/README.md](https://github.com/InspiringGroup-Lab/CertTA/tree/main/attack#readme), we privide step-by-step instructions of generating adversarial flows based on different attack methods.
 
 
-> Unless otherwise specified, the codes should be run in the root directory of this repository (i.e., the `CertTA_public` directory) to properly import dependency files. Please post an issue in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA) or send an email to [yanjz22@mails.tsinghua.edu.cn](yanjz22@mails.tsinghua.edu.cn) if you have any questions. Have fun!
+> Unless otherwise specified, the codes should be run in the root directory of this repository (i.e., the `CertTA_public` directory) to properly import dependency files. Please post an issue in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA) or send an email to [yanjz22@mails.tsinghua.edu.cn](mailto:yanjz22@mails.tsinghua.edu.cn) if you have any questions. Have fun!
 
 # Credit
 
