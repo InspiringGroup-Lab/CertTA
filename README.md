@@ -7,7 +7,7 @@
 
 </div>
 
-> This repository contains the artifacts of paper **CertTA: Certified Robustness Made Practical for Learning-Based Traffic Analysis**, which has been accepeted by USENIX Security 2025. A [Zenodo repository](https://doi.org/10.5281/zenodo.15580293) is hosted synchronously to facilitate the use of these artifacts.
+> This repository contains the artifacts of paper **CertTA: Certified Robustness Made Practical for Learning-Based Traffic Analysis**, which has been accepeted by USENIX Security 2025. A [Zenodo repository](https://doi.org/10.5281/zenodo.15580292) is hosted synchronously to facilitate the use of these artifacts.
 
 # Repository Overview
 
@@ -27,7 +27,7 @@ Our artifact includes the following directories:
 
 * [integration/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/integration) contains the source codes for building and evaluating the integrated system of anomaly detectors and certified traffic analysis models.
 
-> Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580293).
+> Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580292).
 
 ## Environment Setup
 
