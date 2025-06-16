@@ -1,13 +1,10 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES']='2'
-
 import sys
 import time
 import json
 import math
 import torch
 import random
-import torch.backends
 import argparse
 from tqdm import tqdm
 import pytorch_warmup

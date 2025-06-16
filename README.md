@@ -27,7 +27,7 @@ Our artifact includes the following directories:
 
 * [integration/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/integration) contains the source codes for building and evaluating the integrated system of anomaly detectors and certified traffic analysis models.
 
-> Due to the repository size limit, the PCAP files of traffic datasets and the pretrained checkpoints of the YaTC and TrafficFormer models are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580292).
+> Due to the repository size limit, the PCAP files of traffic datasets and the pre-trained checkpoint of the TrafficFormer model are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). **The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580292).**
 
 ## Environment Setup
 
@@ -58,7 +58,17 @@ To ensure the proper functioning of our artifacts, please follow the commands be
 * In [attack/README.md](https://github.com/InspiringGroup-Lab/CertTA/tree/main/attack#readme), we privide step-by-step instructions of generating adversarial flows based on different attack methods.
 
 
-> Unless otherwise specified, the codes should be run in the root directory of this repository (i.e., the `CertTA_public` directory) to properly import dependency files. Please post an issue in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA) or send an email to [yanjz22@mails.tsinghua.edu.cn](mailto:yanjz22@mails.tsinghua.edu.cn) if you have any questions. Have fun!
+> Unless otherwise specified, **the codes should be run in the root directory of this repository (i.e., the `CertTA_public` directory)** to properly import dependency files. Please post an issue in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA) or send an email to [yanjz22@mails.tsinghua.edu.cn](mailto:yanjz22@mails.tsinghua.edu.cn) if you have any questions.
+
+# Demo
+
+We also provide a step-by-step demo to facilitate a quick understanding of how to run the CertTA framework and reproduce the key experimental results in our paper.
+
+In this demo, we will use the CICDOH20 dataset and the pre-trained YaTC model to build CertTA-certified/baseline traffic analysis models and reproduce the key experiments in our paper based on these models. The intermediate model checkpoints and experimental results will be saved to enable easy comparisons with the results found in our paper.
+
+Check out [Demo.md](https://github.com/InspiringGroup-Lab/CertTA/blob/main/Demo.md) and have fun with CertTA!
+
+> **Fully running all the experiments in our paper** - involving two traffic datasets, three adversarial attack methodologies, six supervised traffic analysis systems, CertTA and three baseline certification methods, three unsupervised anomaly detection systems and an integrated system - **might take weeks to complete**. You can follow this demo to quickly verify the major claims made by our paper.
 
 # Credit
 

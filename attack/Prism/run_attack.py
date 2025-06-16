@@ -4,7 +4,6 @@ import os
 import argparse
 import numpy as np
 from utils import *
-from tqdm import tqdm
 import torch
 
 def load_data(args, path):
