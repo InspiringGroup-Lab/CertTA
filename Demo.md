@@ -677,7 +677,7 @@ The plotted figure will be saved as follows, which can be compared with the resu
 
 * Truncated setting 0.5
 
-    ![Certified accuracy curves under different attack intensities (Truncated setting 0.5).](./Demo_certifiedacc_cdf_truncate_0.5.jpg)
+    ![Certified accuracy curves under different attack intensities (Truncated setting 0.5).](./Demo_certifiedacc_cdf_truncate_0.5.jpg){width=50%}
 
 * Truncated setting 0.75
 
