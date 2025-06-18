@@ -4,6 +4,7 @@
     "pr_sel": 0.15,
 
     "sigma_vrs": 0.03,
+    "pr_del": 0.85,
     
     "feature_num": 175,
     "normalizer": null,

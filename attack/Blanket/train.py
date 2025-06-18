@@ -160,16 +160,16 @@ def main():
     
     # attack parameters
     parser.add_argument("--hidden_dim", type=int, default=500)
-    parser.add_argument("--attack_beta_length", type=float, default=100)
-    parser.add_argument("--attack_beta_time_ms", type=float, default=40)
-    parser.add_argument("--attack_pr_sel", type=float, default=0.15)
-    parser.add_argument("--attack_r_additive_star", type=float, default=21.958)
+    parser.add_argument("--attack_beta_length", type=int, default=200)
+    parser.add_argument("--attack_beta_time_ms", type=int, default=40)
+    parser.add_argument("--attack_pr_sel", type=float, default=0.1)
+    parser.add_argument("--attack_r_additive_star", type=float, default=556)
     parser.add_argument("--attack_insert_pkts", type=int, default=2)
     
     # training parameters
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--epochs_num", type=int, default=50)
-    parser.add_argument("--early_stop", type=int, default=20)
+    parser.add_argument("--early_stop", type=int, default=5)
     parser.add_argument("--add_learning_rate", type=float, default=5e-3)
     parser.add_argument("--insert_learning_rate", type=float, default=5e-3)
     

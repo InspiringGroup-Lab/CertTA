@@ -1,0 +1,1269 @@
+[
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.08129236102104187,
+  "packet_num": 39,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_185-236-37-171_443_192-168-20-191_57223/1578967731.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04887764900922775,
+  "packet_num": 48,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_23-192-61-58_443_192-168-20-191_63944/1578954701.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05304619297385216,
+  "packet_num": 40,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_31-13-80-12_443_192-168-20-191_59453/1578948494.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07288763672113419,
+  "packet_num": 50,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_103-129-252-34_443_192-168-20-191_62870/1578954377.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.061202578246593475,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_31-13-80-12_443_192-168-20-191_61383/1578960900.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.047918833792209625,
+  "packet_num": 70,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_192-168-20-191_51821_202-239-30-129_443/1578945275.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04684977978467941,
+  "packet_num": 79,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_52-239-129-4_443_192-168-20-191_59091/1578959848.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.06114983558654785,
+  "packet_num": 44,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_43-228-180-125_443_192-168-20-191_54538/1578940744.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05785369500517845,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_103-70-240-131_443_192-168-20-191_51870/1578945285.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04699091613292694,
+  "packet_num": 43,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_104-100-197-182_443_192-168-20-191_55296/1578941100.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.058251313865184784,
+  "packet_num": 38,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_31-13-80-12_443_192-168-20-191_59453/1578948472.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05002646893262863,
+  "packet_num": 60,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_192-168-20-191_62473_192-229-163-85_443/1578943514.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.0503268837928772,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-15-4-33_443_192-168-20-191_53936/1578966711.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05825250595808029,
+  "packet_num": 65,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_192-168-20-191_61717_212-174-189-120_443/1578949247.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.052690476179122925,
+  "packet_num": 42,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_23-194-121-245_443_192-168-20-191_56624/1578959175.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07509004324674606,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_45-113-192-88_443_192-168-20-191_53949/1578958214.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04902805760502815,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_23-33-240-217_443_192-168-20-191_65490/1578944327.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.047452110797166824,
+  "packet_num": 59,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_185-188-105-10_443_192-168-20-191_57788/1578959493.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.051783543080091476,
+  "packet_num": 40,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_192-168-20-191_61902_199-166-0-26_443/1578943386.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.053947653621435165,
+  "packet_num": 54,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_162-159-136-84_443_192-168-20-191_59977/1578960417.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.047578878700733185,
+  "packet_num": 43,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_31-13-80-12_443_192-168-20-191_50779/1578965903.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04858056828379631,
+  "packet_num": 51,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_94-198-242-19_443_192-168-20-191_57740/1578967975.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07077214866876602,
+  "packet_num": 40,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_164-215-133-232_443_192-168-20-191_65444/1578955243.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.06446096301078796,
+  "packet_num": 36,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_151-101-2-2_443_192-168-20-191_54196/1578941067.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.059531450271606445,
+  "packet_num": 39,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_13-225-189-119_443_192-168-20-191_51111/1578965574.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.055234674364328384,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_52-239-129-4_443_192-168-20-191_54688/1578940810.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05787355452775955,
+  "packet_num": 63,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_185-236-37-243_443_192-168-20-191_57231/1578967735.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04752893000841141,
+  "packet_num": 44,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_13-225-189-119_443_192-168-20-191_51114/1578965576.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05163732171058655,
+  "packet_num": 41,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_164-100-160-96_443_192-168-20-191_59364/1578968769.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05803486332297325,
+  "packet_num": 42,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_122-226-187-14_443_192-168-20-191_63644/1578943903.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05228085070848465,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_35-224-188-159_443_192-168-20-191_62678/1578954311.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05497018247842789,
+  "packet_num": 55,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_42-112-24-66_443_192-168-20-191_55601/1578941373.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.06411699205636978,
+  "packet_num": 35,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_184-87-66-246_443_192-168-20-191_55869/1578967351.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.058081142604351044,
+  "packet_num": 38,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_23-32-39-70_443_192-168-20-191_50114/1578939391.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05080476403236389,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_43-228-180-125_443_192-168-20-191_54549/1578940754.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05127713829278946,
+  "packet_num": 42,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_151-101-126-114_443_192-168-20-191_50150/1578944573.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04706854000687599,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_151-101-130-219_443_192-168-20-191_54417/1578940664.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.08266768604516983,
+  "packet_num": 35,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_54-210-110-9_443_192-168-20-191_50592/1578955706.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.0671461671590805,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_159-226-6-133_443_192-168-20-191_55707/1578946940.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05135850980877876,
+  "packet_num": 41,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_157-185-167-18_443_192-168-20-191_50349/1578965166.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05928441509604454,
+  "packet_num": 39,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_104-17-138-178_443_192-168-20-191_59755/1578942809.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.073030486702919,
+  "packet_num": 36,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_104-20-9-242_443_192-168-20-191_57047/1578959264.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.046678103506565094,
+  "packet_num": 56,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_13-225-189-41_443_192-168-20-191_55463/1578958863.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04892275482416153,
+  "packet_num": 41,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_31-13-80-12_443_192-168-20-191_59214/1578942847.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05615729093551636,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_151-101-65-181_443_192-168-20-191_60697/1578960977.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.04993762820959091,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_43-228-180-125_443_192-168-20-191_58972/1578959790.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.051335882395505905,
+  "packet_num": 39,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_185-147-178-12_443_192-168-20-191_56380/1578959114.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.073206327855587,
+  "packet_num": 54,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_42-62-30-187_443_192-168-20-191_60887/1578960649.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.047079022973775864,
+  "packet_num": 76,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_80-67-43-33_443_192-168-20-191_52427/1578945446.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.06151982769370079,
+  "packet_num": 38,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_31-13-80-12_443_192-168-20-191_52556/1578956710.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.047271840274333954,
+  "packet_num": 43,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_104-123-193-74_443_192-168-20-191_52898/1578945558.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05395391583442688,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_23-32-38-100_443_192-168-20-191_52267/1578940187.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05120517313480377,
+  "packet_num": 43,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_13-225-189-18_443_192-168-20-191_64814/1578944158.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07181500643491745,
+  "packet_num": 40,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_103-70-240-131_443_192-168-20-191_51859/1578945276.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.056269314140081406,
+  "packet_num": 71,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_185-188-105-10_443_192-168-20-191_53345/1578940429.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.058421093970537186,
+  "packet_num": 90,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_122-147-53-19_443_192-168-20-191_65102/1578944208.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.049631763249635696,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_64-210-137-100_443_192-168-20-191_64554/1578944113.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07442237436771393,
+  "packet_num": 73,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_52-239-128-36_443_192-168-20-191_59084/1578959842.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05191557854413986,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_42-112-24-66_443_192-168-20-191_55604/1578941370.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05770127475261688,
+  "packet_num": 38,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_31-13-80-12_443_192-168-20-191_62542/1578954435.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05286724865436554,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_31-13-80-12_443_192-168-20-191_61383/1578961028.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05194341018795967,
+  "packet_num": 44,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_104-123-193-46_443_192-168-20-191_54886/1578940986.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05075150728225708,
+  "packet_num": 62,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_185-236-37-243_443_192-168-20-191_57232/1578967735.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05190447345376015,
+  "packet_num": 39,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_185-147-178-24_443_192-168-20-191_52706/1578945529.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07919958233833313,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_192-168-20-191_61719_212-174-189-120_443/1578949201.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.05148159712553024,
+  "packet_num": 79,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_185-188-105-10_443_192-168-20-191_53345/1578940427.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.0659937635064125,
+  "packet_num": 43,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_43-228-180-125_443_192-168-20-191_54554/1578940754.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.0896247923374176,
+  "packet_num": 35,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_13-235-37-140_443_192-168-20-191_59888/1578960350.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.06253273785114288,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_151-101-130-2_443_192-168-20-191_58762/1578960116.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": -1,
+  "AD_distance": 0.07115586847066879,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_185-51-201-18_443_192-168-20-191_51949/1578956343.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": -1,
+  "AD_distance": 0.05386720225214958,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_58224/1585694414.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": -1,
+  "AD_distance": 0.04685322567820549,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637755.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": -1,
+  "AD_distance": 0.04819607362151146,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_34076/1585694910.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": -1,
+  "AD_distance": 0.05501364916563034,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_32878/1585694811.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": -1,
+  "AD_distance": 0.04878610372543335,
+  "packet_num": 73,
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_60172/1585694676.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06001455709338188,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh3_2020-03-25T11:52:42.781467/TCP_8-8-4-4_443_192-168-20-205_41146/1585147452.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.05268705263733864,
+  "packet_num": 43,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585053010.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06341571360826492,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T00:14:07.887184/TCP_9-9-9-11_443_192-168-20-144_59236/1585019344.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.04816063866019249,
+  "packet_num": 81,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59480/1585026196.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06456360965967178,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056518.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.0679633617401123,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056350.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06563275307416916,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017423.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.046769700944423676,
+  "packet_num": 63,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017645.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06528078019618988,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056436.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06580054759979248,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017585.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06671946495771408,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056150.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06586044281721115,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052825.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06690498441457748,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59474/1585025988.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06585490703582764,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59472/1585025947.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06589193642139435,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017871.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.0654548853635788,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017621.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06403214484453201,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052890.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06571206450462341,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59480/1585026174.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06515641510486603,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056078.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.0669202208518982,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017535.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.0660933181643486,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59470/1585025871.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06519148498773575,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585053039.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06502722948789597,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056450.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.05032269284129143,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052674.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06657221168279648,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017635.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.05017191544175148,
+  "packet_num": 84,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017943.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.08220579475164413,
+  "packet_num": 99,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056383.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06564952433109283,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052792.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06525349617004395,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052883.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.05396493151783943,
+  "packet_num": 85,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052645.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.04858352243900299,
+  "packet_num": 50,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017742.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.04808429628610611,
+  "packet_num": 81,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056210.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.069200299680233,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056115.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.0508066788315773,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108886.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06644047051668167,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585055973.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.04679711535573006,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59476/1585026099.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06654805690050125,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017766.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": -1,
+  "AD_distance": 0.06649238616228104,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052926.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.052535880357027054,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh7_2020-03-20T04:27:17.650984/TCP_9-9-9-11_443_192-168-20-209_60960/1584689192.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05175783857703209,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T08:38:35.336563/TCP_9-9-9-11_443_192-168-20-212_59156/1584703814.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05562419071793556,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T02:46:23.296778/TCP_9-9-9-11_443_192-168-20-206_39620/1584596177.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05105822905898094,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh1_2020-03-20T06:21:24.072898/TCP_9-9-9-11_443_192-168-20-144_49390/1584695822.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.0497894212603569,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh9_2020-03-19T06:41:44.400941/TCP_9-9-9-11_443_192-168-20-211_46238/1584610712.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05606675148010254,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584611988.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05386326089501381,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T06:18:41.844442/TCP_9-9-9-11_443_192-168-20-206_39666/1584609262.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.050265729427337646,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh8_2020-03-20T04:50:09.848335/TCP_9-9-9-11_443_192-168-20-210_43918/1584690572.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.054353851824998856,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh6_2020-03-19T08:13:45.781049/TCP_9-9-9-11_443_192-168-20-208_33402/1584616086.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.050792280584573746,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh8_2020-03-20T07:29:51.882242/TCP_9-9-9-11_443_192-168-20-210_43952/1584699963.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05335335433483124,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584611872.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.04973101615905762,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh2_2020-03-20T09:24:34.129406/TCP_9-9-9-11_443_192-168-20-204_40490/1584706601.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05026191473007202,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh5_2020-03-19T08:36:48.330453/TCP_9-9-9-11_443_192-168-20-207_50660/1584617297.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.054044242948293686,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T02:00:16.920476/TCP_9-9-9-11_443_192-168-20-209_60672/1584593636.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.0496692955493927,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T05:05:27.574916/TCP_9-9-9-11_443_192-168-20-209_60704/1584604835.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05001449212431908,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh2_2020-03-20T09:24:34.129406/TCP_9-9-9-11_443_192-168-20-204_40490/1584706982.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.050526510924100876,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh6_2020-03-19T09:22:38.328779/TCP_9-9-9-11_443_192-168-20-208_33414/1584620216.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06585272401571274,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh2_2020-03-20T06:44:14.331935/TCP_9-9-9-11_443_192-168-20-204_40460/1584697242.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05144023150205612,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh8_2020-03-20T07:29:51.882242/TCP_9-9-9-11_443_192-168-20-210_43952/1584699730.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05145210400223732,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh3_2020-03-20T07:07:01.711658/TCP_9-9-9-11_443_192-168-20-205_46514/1584698359.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.0563637875020504,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh6_2020-03-19T09:22:38.328779/TCP_9-9-9-11_443_192-168-20-208_33414/1584620285.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.056712936609983444,
+  "packet_num": 98,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh1_2020-03-20T11:19:14.854707/TCP_9-9-9-11_443_192-168-20-144_49966/1584713740.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.051306456327438354,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T03:55:56.304905/TCP_9-9-9-11_443_192-168-20-205_46210/1584600367.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05167943984270096,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh7_2020-03-20T04:27:17.650984/TCP_9-9-9-11_443_192-168-20-209_60960/1584688839.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.04985563084483147,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T08:36:51.132344/TCP_9-9-9-11_443_192-168-20-209_60752/1584617704.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05064234137535095,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T05:05:24.583035/TCP_9-9-9-11_443_192-168-20-206_39648/1584604998.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.049815498292446136,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_dnsgoogle_doh4_2020-03-20T10:22:12.613915/TCP_8-8-4-4_443_192-168-20-206_56332/1584710247.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.049161236733198166,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh2_2020-03-20T06:44:14.331935/TCP_9-9-9-11_443_192-168-20-204_40460/1584696995.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06040067598223686,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T04:19:28.710924/TCP_9-9-9-11_443_192-168-20-205_46218/1584601815.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.060803718864917755,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T02:00:16.920476/TCP_9-9-9-11_443_192-168-20-209_60672/1584593553.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05150065943598747,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh5_2020-03-20T10:33:41.718049/TCP_9-9-9-11_443_192-168-20-207_50948/1584710775.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.059109948575496674,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T02:46:23.296778/TCP_9-9-9-11_443_192-168-20-206_39620/1584596225.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.0478709414601326,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T08:38:35.336563/TCP_9-9-9-11_443_192-168-20-212_59156/1584704263.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.058535292744636536,
+  "packet_num": 39,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T09:47:46.753526/TCP_9-9-9-11_443_192-168-20-212_59168/1584708275.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06612207740545273,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh5_2020-03-20T10:33:41.718049/TCP_9-9-9-11_443_192-168-20-207_50948/1584711125.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.04899781569838524,
+  "packet_num": 77,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh1_2020-03-20T11:19:14.854707/TCP_9-9-9-11_443_192-168-20-144_49966/1584713748.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.059578023850917816,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T04:19:28.710924/TCP_9-9-9-11_443_192-168-20-205_46218/1584601976.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05067884549498558,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh1_2020-03-20T11:19:14.854707/TCP_9-9-9-11_443_192-168-20-144_49964/1584713682.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.047539129853248596,
+  "packet_num": 92,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584612274.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06276988238096237,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh9_2020-03-19T06:41:44.400941/TCP_9-9-9-11_443_192-168-20-211_46238/1584610791.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05302662029862404,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T05:55:11.480345/TCP_9-9-9-11_443_192-168-20-205_46238/1584608091.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06634154915809631,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T05:55:11.480345/TCP_9-9-9-11_443_192-168-20-205_46238/1584607539.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.04992048814892769,
+  "packet_num": 49,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T08:38:35.336563/TCP_9-9-9-11_443_192-168-20-212_59156/1584704258.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05237245559692383,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T02:46:23.296778/TCP_9-9-9-11_443_192-168-20-206_39620/1584596201.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05306509509682655,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T02:46:23.296778/TCP_9-9-9-11_443_192-168-20-206_39620/1584596478.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05125897005200386,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh9_2020-03-19T06:41:44.400941/TCP_9-9-9-11_443_192-168-20-211_46238/1584610873.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05088471248745918,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh5_2020-03-19T08:36:48.330453/TCP_9-9-9-11_443_192-168-20-207_50660/1584617660.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05501580610871315,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T09:47:46.753526/TCP_9-9-9-11_443_192-168-20-212_59168/1584707852.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.049879878759384155,
+  "packet_num": 80,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T05:05:27.574916/TCP_9-9-9-11_443_192-168-20-209_60704/1584604520.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05337889865040779,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T05:05:27.574916/TCP_9-9-9-11_443_192-168-20-209_60704/1584604853.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05864206328988075,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T02:46:22.426507/TCP_9-9-9-11_443_192-168-20-205_46198/1584596346.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05305915325880051,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh4_2020-03-20T04:27:14.484159/TCP_9-9-9-11_443_192-168-20-206_39902/1584689197.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.04856845736503601,
+  "packet_num": 61,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T02:46:22.426507/TCP_9-9-9-11_443_192-168-20-205_46198/1584596245.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05857659876346588,
+  "packet_num": 62,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh9_2020-03-19T06:41:44.400941/TCP_9-9-9-11_443_192-168-20-211_46238/1584610702.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05150635540485382,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T09:47:46.753526/TCP_9-9-9-11_443_192-168-20-212_59168/1584708171.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.08306551724672318,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh5_2020-03-19T08:36:48.330453/TCP_9-9-9-11_443_192-168-20-207_50660/1584617711.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.051103703677654266,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T04:19:28.710924/TCP_9-9-9-11_443_192-168-20-205_46218/1584602285.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05069180205464363,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T05:05:24.583035/TCP_9-9-9-11_443_192-168-20-206_39648/1584605085.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05181846395134926,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584611863.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.07908947020769119,
+  "packet_num": 41,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_dnsgoogle_doh4_2020-03-20T09:13:01.220820/TCP_8-8-4-4_443_192-168-20-206_56320/1584705755.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.048805784434080124,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T08:36:51.132344/TCP_9-9-9-11_443_192-168-20-209_60752/1584617646.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06252465397119522,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T03:55:56.304905/TCP_9-9-9-11_443_192-168-20-205_46210/1584600868.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05139676481485367,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh8_2020-03-20T07:29:51.882242/TCP_9-9-9-11_443_192-168-20-210_43952/1584699721.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.058467600494623184,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T02:46:26.584852/TCP_9-9-9-11_443_192-168-20-209_60680/1584596431.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05364520102739334,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh5_2020-03-19T08:36:48.330453/TCP_9-9-9-11_443_192-168-20-207_50660/1584617700.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.058021221309900284,
+  "packet_num": 35,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T05:28:56.000154/TCP_9-9-9-11_443_192-168-20-210_43662/1584606286.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.05290646106004715,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T04:19:30.580401/TCP_9-9-9-11_443_192-168-20-206_39640/1584601812.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.06660182029008865,
+  "packet_num": 100,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T06:18:41.844442/TCP_9-9-9-11_443_192-168-20-206_39666/1584609266.pcap"
+ }
+]

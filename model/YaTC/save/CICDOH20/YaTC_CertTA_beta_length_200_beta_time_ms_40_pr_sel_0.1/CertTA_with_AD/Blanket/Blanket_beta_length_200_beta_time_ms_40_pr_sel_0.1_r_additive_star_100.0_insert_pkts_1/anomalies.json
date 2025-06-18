@@ -1,0 +1,9 @@
+[
+ {
+  "label": 3,
+  "c_A": -1,
+  "AD_distance": 0.050899751484394073,
+  "packet_num": 37,
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_dnsgoogle_doh4_2020-03-20T09:13:01.220820/TCP_8-8-4-4_443_192-168-20-206_56320/1584705755.pcap"
+ }
+]

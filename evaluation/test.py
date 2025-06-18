@@ -91,13 +91,13 @@ def one_of_k_test(args, model, test_flows, ith):
         flow = test_flows[i]
             
         # Smoothing & Data preprocessing
-        if args.smoothed == 'CertTA':
+        if args.smoothed in ['CertTA', 'RSDel']:
             smoothing_samples = generate_smoothing_samples(flow, args.smoothing_params, args.samples_num, args.pcap_level)
             instances = [flow_preprocessing(sample, args) for sample in smoothing_samples]
         elif args.smoothed == 'VRS':
             instance_flow = flow_preprocessing(flow, args)
             instance_flow = dimension_alignment(args, instance_flow)
-            instances = generate_smoothing_samples_vrs(instance_flow, args.sigma_vrs, args.model, args.samples_num)
+            instances = generate_smoothing_samples_vrs(instance_flow, args.sigma_vrs, args.samples_num, args)
         elif args.smoothed == 'BARS':
             instance_flow = flow_preprocessing(flow, args)
             instance_flow = dimension_alignment(args, instance_flow)
@@ -171,10 +171,10 @@ def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument("--dataset", default="CICDOH20", choices=['CICDOH20', 'TIISSRC23'])
-    parser.add_argument("--model", default="DF", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'TrafficFormer', 'YaTC'])
-    parser.add_argument("--augment", type=str, default=None, choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--model", default="YaTC", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'TrafficFormer', 'YaTC'])
+    parser.add_argument("--augment", type=str, default=None, choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='train with the smoothing samples (perturbed flows)')
-    parser.add_argument("--smoothed", type=str, default=None, choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--smoothed", type=str, default=None, choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='test with randomized smoothing')
     parser.add_argument("--truncate", type=float, default=None, choices=[None, 0.25, 0.5, 0.75])
     smoothing_opts(parser)
@@ -186,14 +186,16 @@ def main():
     print('Loading the model hyperparameters from the config file.')
     args = load_hyperparam(args, './evaluation/config/{}_{}_config.json'.format(args.model, args.dataset))
     
-    if args.smoothed == 'CertTA': # Parameters for smoothing samples generation
+    if args.smoothed in ['CertTA', 'RSDel']: # Parameters for smoothing samples generation
+        if args.smoothed == 'RSDel':
+            args.beta_length, args.beta_time_ms, args.pr_sel = None, None, 1 - args.pr_del
         args.smoothing_params = {
             'beta_length': args.beta_length,
             'beta_time_ms': args.beta_time_ms,
             'pr_sel': args.pr_sel,
         }
     elif args.smoothed == 'BARS' or args.augment == 'BARS':
-        if model in ['kFP', 'Whisper']:
+        if args.model in ['kFP', 'Whisper']:
             raise Exception('BARS is not applicable to the {} model'.format(args.model))
 
     args.save_dir = './model/{}/save/{}/{}{}/'.format(args.model, args.dataset, model_name_generator(args), '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')

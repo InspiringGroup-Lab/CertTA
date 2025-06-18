@@ -4,6 +4,7 @@
     "pr_sel": 0.2,
 
     "sigma_vrs": 0.1,
+    "pr_del": 0.8,
 
     "lambda_shape": 0.001,
     "feature_noise_distribution": "gaussian",

@@ -19,11 +19,12 @@ def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument("--dataset", default="CICDOH20", choices=['CICDOH20', 'TIISSRC23'])
-    parser.add_argument("--model", default="DF", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'TrafficFormer', 'YaTC'])
+    parser.add_argument("--model", default="YaTC", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'TrafficFormer', 'YaTC'])
     parser.add_argument("--augment", type=str, default='CertTA', choices=['CertTA'],
                         help='train with the smoothing samples (perturbed flows)')
     parser.add_argument("--smoothed", type=str, default='CertTA', choices=['CertTA'],
                         help='test with randomized smoothing')
+    parser.add_argument("--truncate", type=float, default=None, choices=[None, 0.25, 0.5, 0.75])
     smoothing_opts(parser)
     args = parser.parse_args()
     print('Plotting the CDF of certified accuracy for the {} model.'.format(args.model))
@@ -36,8 +37,9 @@ def main():
         'beta_time_ms': args.beta_time_ms,
         'pr_sel': args.pr_sel
     }
-
-    args.save_dir = './model/{}/save/{}/{}/'.format(args.model, args.dataset, model_name_generator(args))
+    
+    args.pcap_level = args.model in ['YaTC', 'TrafficFormer']
+    args.save_dir = './model/{}/save/{}/{}{}/'.format(args.model, args.dataset, model_name_generator(args), '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
     print('save dir: {}'.format(args.save_dir))
     args.result_dir = args.save_dir + ('base/' if args.smoothed is None else '{}/'.format(args.smoothed))
     print('smoothed:', args.smoothed)
@@ -70,7 +72,7 @@ def main():
             d = int(np.ceil(args.pr_sel * n))
         else:
             d = n
-        S_jnt = radius_joint_exp(p_A, d, args.beta_length, args.beta_time_ms, n)
+        S_jnt = radius_joint_exp(p_A, d, args.beta_length, args.beta_time_ms, n, args.pcap_level)
         for point in S_jnt:
             n_del, n_ins, n_sub, r_additive_star = point
             if n_del == 0 and n_ins in n_ins_set and n_sub == 0:
@@ -117,7 +119,7 @@ def main():
     plt.setp(ax.spines.values(), linewidth=3)
     
     plt.show()
-    fig.savefig(args.result_dir + 'certifiedacc_cdf.pdf', bbox_inches='tight', dpi=1000)
+    fig.savefig(args.result_dir + 'certifiedacc_cdf.jpg', bbox_inches='tight', dpi=1000)
     with open(args.result_dir + 'attack_intensities_at_certifiedacc', 'w') as fp:
         intensities_at_certified_acc['certified_acc'] = '[(n_ins, r_additive_star), ...]'
         json.dump(intensities_at_certified_acc, fp, indent=1)

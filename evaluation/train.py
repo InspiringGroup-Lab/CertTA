@@ -149,7 +149,7 @@ def train_one_epoch(args, model, optimizer, scheduler, train_flows, epoch_idx):
     random.shuffle(train_flows)
     instances = [] # instances: [(x, y, ...), ...]
     for flow in tqdm(train_flows, desc='Flow Preprocessing', disable=False):
-        if args.augment == 'CertTA':
+        if args.augment in ['CertTA', 'RSDel']:
             flow = smoothing_joint(flow, args.smoothing_params, args.pcap_level)
         instance_flow = flow_preprocessing(flow, args)
         if instance_flow == -1:
@@ -283,7 +283,7 @@ def evaluate(args, model, eval_flows):
     # Data preprocessing
     instances = [] # instances: [(x, y, ...), ...]
     for flow in tqdm(eval_flows, desc='Flow Preprocessing', disable=True):
-        if args.augment == 'CertTA':
+        if args.augment in ['CertTA', 'RSDel']:
             flow = smoothing_joint(flow, args.smoothing_params, args.pcap_level)
         instance_flow = flow_preprocessing(flow, args)
         if instance_flow == -1:
@@ -381,8 +381,8 @@ def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument("--dataset", default="CICDOH20", choices=['CICDOH20', 'TIISSRC23'])
-    parser.add_argument("--model", default="DF", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'YaTC', 'TrafficFormer'])
-    parser.add_argument("--augment", type=str, default=None, choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--model", default="YaTC", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'YaTC', 'TrafficFormer'])
+    parser.add_argument("--augment", type=str, default=None, choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='train with the smoothing samples (perturbed flows)')
     parser.add_argument("--replace_best_model", type=bool, default=True, help='replace the best model')
     parser.add_argument("--truncate", type=float, default=None, choices=[None, 0.25, 0.5, 0.75])
@@ -393,7 +393,9 @@ def main():
 
     print('Loading the model hyperparameters from the config file.')
     args = load_hyperparam(args, './evaluation/config/{}_{}_config.json'.format(args.model, args.dataset))
-    if args.augment == 'CertTA': # Parameters for smoothing samples generation
+    if args.augment in ['CertTA', 'RSDel']: # Parameters for smoothing samples generation
+        if args.augment == 'RSDel':
+            args.beta_length, args.beta_time_ms, args.pr_sel = None, None, 1 - args.pr_del
         args.smoothing_params = {
             'beta_length': args.beta_length,
             'beta_time_ms': args.beta_time_ms,

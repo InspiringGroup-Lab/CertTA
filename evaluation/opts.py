@@ -14,7 +14,11 @@ def smoothing_opts(parser):
     
     # VRS
     parser.add_argument("--sigma_vrs", type=float, default=None)
-
+    
+    # RSDel
+    parser.add_argument("--pr_del", type=float, default=None, 
+                            help="the probability to delete each packet")
+    
 
 def attack_opts(parser):
     parser.add_argument("--attack", type=str, default=None, choices=['Blanket', 'Amoeba', 'Prism'])

@@ -1,0 +1,8 @@
+| Empirical Accuracy  1.000, Macro  1.000
+| Macro| precision  1.000| recall  1.000| f1  1.000
+
+| true label    0 | samples num    300 | accuracy  1.000 | precision  1.000 | recall  1.000 | f1  1.000 |    300      0      0      0 |
+| true label    1 | samples num    100 | accuracy  1.000 | precision  1.000 | recall  1.000 | f1  1.000 |      0    100      0      0 |
+| true label    2 | samples num    100 | accuracy  1.000 | precision  1.000 | recall  1.000 | f1  1.000 |      0      0    100      0 |
+| true label    3 | samples num    100 | accuracy  1.000 | precision  1.000 | recall  1.000 | f1  1.000 |      0      0      0    100 |
+| Average Accuracy  1.000 |

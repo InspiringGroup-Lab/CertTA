@@ -5,7 +5,6 @@ import binascii
 import numpy as np
 from tqdm import tqdm
 from PIL import Image
-from torch import vmap
 import scapy.all as scapy
 from torchvision import transforms
 from evaluation.utilities import rewrite_pcap_packet_timestamp, re_compute_chksum_wirelen, bigram_generation
@@ -64,7 +63,10 @@ def smoothing_joint(flow, smoothing_params, pcap_level=False):
         new_iat = [t + np.random.exponential(beta_time_ms) * 0.001 for t in new_iat]
     new_timestamp = [0]
     for t in new_iat[1:]:
-        new_timestamp.append(new_timestamp[-1] + float(t) * np.sqrt(2 / np.pi))
+        if pcap_level:
+            new_timestamp.append(new_timestamp[-1] + float(t))
+        else:
+            new_timestamp.append(new_timestamp[-1] + float(t) * np.sqrt(2 / np.pi))
         
     # packet length padding
     pad = [0] * new_packet_num
@@ -74,7 +76,11 @@ def smoothing_joint(flow, smoothing_params, pcap_level=False):
         pad = [int(np.random.exponential(beta_length)) for _ in range(new_packet_num)]
     direction_length = flow['direction_length']
     new_direction_length = [direction_length[pos] for pos in sel_pos]
-    new_direction_length = [(length + np.sign(length) * int(pad[i] * np.sqrt(2 / np.pi))) 
+    if pcap_level:
+        new_direction_length = [(length + np.sign(length) * int(pad[i])) 
+                                for i, length in enumerate(new_direction_length)]
+    else:
+        new_direction_length = [(length + np.sign(length) * int(pad[i] * np.sqrt(2 / np.pi))) 
                                 for i, length in enumerate(new_direction_length)]
     # if the first packet is deleted, reset the direction of the new first packet as +1
     if new_direction_length[0] < 0:
@@ -160,7 +166,7 @@ def smoothing_vrs(instance_flow, sigma_vrs, args):
         noise = np.round(noise)
         x_noised = x + noise
         for v in np.nditer(x_noised, op_flags=['readwrite']):
-            v[...] = int8_overflow(v, 255)
+            v[...] = int8_overflow(v)
 
         flow_img = Image.fromarray(x_noised)
         mean = [0.5]
@@ -210,11 +216,14 @@ def smoothing_bars(instance_flow, noise_generator, t, model_name):
     noised_X = X + noise_feat
 
     if model_name == 'TrafficFormer':
-        noised_X = vmap(vocab_overflow)(noised_X)
+        vocab = 60005 - 1
+        noised_X = torch.where(noised_X > vocab, noised_X - vocab, noised_X)
+        noised_X = torch.where(noised_X < vocab, noised_X + vocab, noised_X)
         noised_X = noised_X.detach().cpu().numpy().tolist()
         instance_flow = (noised_X, tgt, seg)
     elif model_name == 'YaTC':
-        noised_X = vmap(int8_overflow)(noised_X)
+        noised_X = torch.where(noised_X > 255, noised_X - 255, noised_X)
+        noised_X = torch.where(noised_X < 0, noised_X + 255, noised_X)
         noised_X = noised_X.unsqueeze(0)
         noised_X = torch.clamp(noised_X, 0, 255)
         mean = [0.5]

@@ -94,9 +94,9 @@ def main():
     print('Testing the {}_AD model.'.format(args.model))
     
     print('Loading the model hyperparameters from the config file.')
-    args = load_hyperparam(args, './AnomalyDetection/config/{}_AD_{}_config.json'.format(args.model, args.dataset))
+    args = load_hyperparam(args, './integration/config/{}_AD_{}_config.json'.format(args.model, args.dataset))
     
-    args.save_dir = './model/{}/save/{}/{}_AD{}/'.format(args.model, args.dataset, args.model, args.model_AD, '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
+    args.save_dir = './model/{}/save/{}/{}_AD{}/'.format(args.model, args.dataset, args.model, '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
     print('save dir: {}'.format(args.save_dir))
     if args.attack is None:
         args.result_dir = args.save_dir + 'clean/'
@@ -137,6 +137,7 @@ def main():
     train_distances = sorted(train_distances, reverse=True)
     distance_threshold = train_distances[int(np.floor(len(train_distances) * args.FPR_threshold))]
 
+    print('Performing anomaly detection: threshold {}.'.format(distance_threshold))
     normal_flows, anomalies = anomaly_detection(args, model, test_flows, distance_threshold)
     with open(args.result_dir + 'anomaly_detection_acc.txt', 'w') as fp:
         fp.writelines("| FPR {:6.3f}, PR {:6.3f}\n".format(

@@ -58,19 +58,22 @@ def radius_packet_substitution(p_A, n, d):
     return n_sub - 1
 
 
-def radius_joint_exp(p_A, d_sel, beta_length, beta_time_ms, n, yatc=False):
+def radius_joint_exp(p_A, d_sel, beta_length, beta_time_ms, n, pcap_level=False):
     # return: S_jnt = {(n_del, n_ins, n_sub, r_additive_star)}
     S_jnt = []
 
     d_sel = d_sel if d_sel is not None else n
-    beta_length = int(beta_length * np.sqrt(2 / np.pi)) if beta_length is not None else 0
-    beta_time_ms = beta_time_ms * np.sqrt(2 / np.pi) if beta_time_ms is not None else 0
-
+    if pcap_level:
+        beta_length = beta_length if beta_length is not None else 0
+        beta_time_ms = beta_time_ms if beta_time_ms is not None else 0
+    else:
+        beta_length = int(beta_length * np.sqrt(2 / np.pi)) if beta_length is not None else 0
+        beta_time_ms = beta_time_ms * np.sqrt(2 / np.pi) if beta_time_ms is not None else 0
+   
     d = d_sel
     n_del_max = min(radius_packet_deletion(p_A, n, d), n)
     n_ins_max = radius_packet_insertion(p_A, n, d)
     n_sub_max = min(radius_packet_substitution(p_A, n, d), n)
-
     
     n_del_max = 0 # when there is no packet deletion applied to adversarial flows, n_del_max can be set to 0 to simplify the robustness region
     for n_del in range(n_del_max+1):

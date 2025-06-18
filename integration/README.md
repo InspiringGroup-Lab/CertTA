@@ -33,7 +33,7 @@ python integration/test_anomaly_detector.py --dataset DATASET_NAME --attack ATTA
 Follow the instructions in [/CertTA_public/evaluation/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/evaluation) to train CertTA-certified traffic analysis models. Then,
 
 ```bash
-python integration/test_integrated_system.py --dataset DATASET_NAME --attack ATTACK_NAME --model_AD MODEL_NAME_AD --FPR_threshold 0.01  --model MODEL_NAME --augment CertTA --smoothed CertTA
+python integration/test_integrated_system.py --dataset DATASET_NAME --attack ATTACK_NAME --model_AD MODEL_NAME_AD  --model MODEL_NAME --augment CertTA --smoothed CertTA --FPR_threshold 0.01
 ```
 
 * Choose ATTACK_NAME from Blanket, Amoeba and Prism. Specify the attack intensities by setting attack-related paramters (e.g., `attack_r_additive_star` and `attack_insert_pkts`) in `/CertTA_public/evaluation/opts.py`. 
@@ -43,3 +43,9 @@ python integration/test_integrated_system.py --dataset DATASET_NAME --attack ATT
 * Choose MODEL_NAME from kFP, Kitsune, Whisper, DF, YaTC and TrafficFormer. The settings of CertTA's smoothing parameters for these models are provided in the `/CertTA_public/evaluation/config/` directory.
 
 * For each flow, a dictionary instance will be saved to record the information required for accuracy meassurement, such as the original flow label and the predicted class. When the predicted class is -1, the flow is detected as an anomaly by the anomaly detector. Otherwise, the predicted class represents the prediction of the CertTA-ceritfied traffic analysis model. These classification results of test flows will be saved as json files in the `/CertTA_public/model/MODEL_NAME/save/DATASET_NAME/` directory. 
+  
+```bash
+python integration/collect_classification_results.py --dataset DATASET_NAME --attack ATTACK_NAME --model_AD MODEL_NAME_AD  --model MODEL_NAME --augment CertTA --smoothed CertTA --FPR_threshold 0.01
+```
+
+* The classification results of adversarial flows will be collected to calculate the defense success rate. Results will be saved as a `defense_success_rate.txt` file.

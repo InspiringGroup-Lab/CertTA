@@ -1,0 +1,602 @@
+[
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 54,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_23-15-4-9_443_192-168-20-191_49365/1578944388.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 34,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_185-236-37-171_443_192-168-20-191_57223/1578967731.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_149-154-167-99_443_192-168-20-191_54121/1578940606.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_23-36-95-177_443_192-168-20-191_50546/1578955698.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 76,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_74-119-119-131_443_192-168-20-191_60469/1578960539.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 39,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_13-226-38-40_443_192-168-20-191_64784/1578955018.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_172-217-1-161_443_192-168-20-191_59217/1578942824.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_31-13-80-12_443_192-168-20-191_58429/1578968363.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_31-13-80-12_443_192-168-20-191_58017/1578959733.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_31-13-80-12_443_192-168-20-191_52673/1578940309.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_104-123-193-245_443_192-168-20-191_50859/1578955786.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_47-246-24-253_443_192-168-20-191_58748/1578947969.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 80,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_23-194-120-245_443_192-168-20-191_63360/1578961538.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_31-13-80-12_443_192-168-20-191_64193/1578954848.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 43,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_23-192-61-58_443_192-168-20-191_63944/1578954701.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 72,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_23-192-41-78_443_192-168-20-191_52149/1578940121.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_59-110-185-219_443_192-168-20-191_51790/1578940055.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_13-225-189-88_443_192-168-20-191_56564/1578967507.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_192-168-20-191_52040_212-27-48-10_443/1578965819.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_31-13-80-12_443_192-168-20-191_53331/1578966557.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 93,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_23-54-177-51_443_192-168-20-191_54634/1578940781.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 83,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-111-182-58_443_192-168-20-191_64539/1578961867.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_31-13-80-12_443_192-168-20-191_62288/1578943492.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 39,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_104-18-205-222_443_192-168-20-191_60212/1578960499.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_47-246-24-253_443_192-168-20-191_56535/1578941984.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 85,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_23-15-4-32_443_192-168-20-191_55819/1578947183.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 60,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_192-168-20-191_60738_220-242-143-169_443/1578942988.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 50,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_104-69-61-235_443_192-168-20-191_62859/1578943566.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_31-13-80-12_443_192-168-20-191_59453/1578948494.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 65,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-15-4-18_443_192-168-20-191_53959/1578966717.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-15-4-33_443_192-168-20-191_53935/1578966713.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 52,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_125-64-41-214_443_192-168-20-191_60862/1578960644.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_185-188-105-10_443_192-168-20-191_53349/1578940422.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 86,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_52-216-104-83_443_192-168-20-191_58435/1578968254.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_13-225-198-16_443_192-168-20-191_59662/1578942780.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_31-13-80-12_443_192-168-20-191_63119/1578961662.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 88,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_192-168-20-191_57405_194-54-14-159_443/1578942062.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_192-168-20-191_57061_212-83-147-5_443/1578967673.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 56,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_104-17-48-107_443_192-168-20-191_57785/1578947639.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 45,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00005_20200113142226/TCP_103-129-252-34_443_192-168-20-191_62870/1578954377.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 32,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_31-13-80-12_443_192-168-20-191_61383/1578960900.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_31-13-80-12_443_192-168-20-191_61383/1578961030.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 51,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_192-168-20-191_54743_210-89-160-70_443/1578958554.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_151-101-2-2_443_192-168-20-191_61893/1578949376.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_91-233-218-127_443_192-168-20-191_52418/1578945446.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_104-100-211-242_443_192-168-20-191_55722/1578941423.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_185-167-72-20_443_192-168-20-191_59286/1578942695.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 48,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_23-5-239-192_443_192-168-20-191_54573/1578958508.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 65,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_192-168-20-191_51821_202-239-30-129_443/1578945275.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 0.95,
+  "packet_num": 74,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_52-239-129-4_443_192-168-20-191_59091/1578959848.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_152-199-24-192_443_192-168-20-191_55766/1578958945.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 40,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_31-13-80-12_443_192-168-20-191_53331/1578966465.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_192-168-20-191_63735_213-13-146-180_443/1578949870.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_31-13-80-12_443_192-168-20-191_59214/1578942808.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_45-57-91-1_443_192-168-20-191_49635/1578939141.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 39,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_43-228-180-125_443_192-168-20-191_54538/1578940744.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_31-13-80-12_443_192-168-20-191_54212/1578966828.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 90,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_185-147-178-12_443_192-168-20-191_51655/1578940021.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_47-246-24-253_443_192-168-20-191_62801/1578949633.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_23-32-38-172_443_192-168-20-191_64618/1578944123.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 0.99,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-15-4-33_443_192-168-20-191_53930/1578966707.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 82,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_104-123-193-196_443_192-168-20-191_57930/1578968060.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_103-70-240-131_443_192-168-20-191_51870/1578945285.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 60,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_185-147-178-23_443_192-168-20-191_52020/1578965801.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 79,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-15-4-18_443_192-168-20-191_53959/1578966718.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_185-188-105-4_443_192-168-20-191_53337/1578940419.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 38,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113100617/TCP_104-100-197-182_443_192-168-20-191_55296/1578941100.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_192-168-20-191_62949_205-185-208-154_443/1578961410.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 63,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-194-122-10_443_192-168-20-191_55152/1578967492.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 33,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00003_20200113120939/TCP_31-13-80-12_443_192-168-20-191_59453/1578948472.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_184-28-207-183_443_192-168-20-191_60802/1578943018.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 55,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113111300/TCP_192-168-20-191_62473_192-229-163-85_443/1578943514.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 31,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00001_20200113152847/TCP_151-101-136-84_443_192-168-20-191_58094/1578959571.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_23-15-4-33_443_192-168-20-191_53936/1578966711.pcap"
+ },
+ {
+  "label": 0,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Benign/dump_00002_20200113162614/TCP_104-106-240-148_443_192-168-20-191_53978/1578966732.pcap"
+ }
+]

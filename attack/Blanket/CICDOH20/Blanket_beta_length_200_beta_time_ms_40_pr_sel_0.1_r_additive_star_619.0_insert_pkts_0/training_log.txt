@@ -1,0 +1,6 @@
+Epoch 1, train f1 0.9978137028952986, valid f1 1.0, best valid f1 1.0, train loss -0.651913246485492, valid loss -0.05984468989117886.
+Epoch 2, train f1 0.9975042393349618, valid f1 1.0, best valid f1 1.0, train loss -0.7083864943197113, valid loss -0.06025741777193616.
+Epoch 3, train f1 0.9975042393349618, valid f1 1.0, best valid f1 1.0, train loss -0.7085985591183999, valid loss -0.06025932366537745.
+Epoch 4, train f1 0.9975042393349618, valid f1 1.0, best valid f1 1.0, train loss -0.7086040372232674, valid loss -0.06025974718431826.
+Epoch 5, train f1 0.9975042393349618, valid f1 1.0, best valid f1 1.0, train loss -0.7086055499166832, valid loss -0.06025944485372747.
+Early Stopping!

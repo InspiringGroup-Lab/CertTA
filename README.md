@@ -29,7 +29,7 @@ Our artifact includes the following directories:
 
 > Due to the repository size limit, the PCAP files of traffic datasets and the pre-trained checkpoint of the TrafficFormer model are not provided in our [Github repository](https://github.com/InspiringGroup-Lab/CertTA). **The complete artifiacts can be accessed in our [Zenodo repository](https://doi.org/10.5281/zenodo.15580292).**
 
-## Environment Setup
+# Environment Setup
 
 To ensure the proper functioning of our artifacts, please follow the commands below:
 

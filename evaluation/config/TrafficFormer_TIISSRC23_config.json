@@ -4,6 +4,7 @@
     "pr_sel": 0.1,
 
     "sigma_vrs": 80,
+    "pr_del": 0.9,
 
     "lambda_shape": 0.01,
     "feature_noise_distribution": "gaussian",
@@ -48,7 +49,7 @@
     "scheduler": "linear",
     "batch_size": 64,
     "epochs_num": 200,
-    "early_stop": 50,
+    "early_stop": 10,
     "warmup": 0.1,
     "learning_rate": 6e-5,
     "weight_decay": 0.01

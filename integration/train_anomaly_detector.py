@@ -168,7 +168,7 @@ def main():
     print('Training the {}_AD model.'.format(args.model))
     
     print('Loading the model hyperparameters from the config file.')
-    args = load_hyperparam(args, './AnomalyDetection/config/{}_AD_{}_config.json'.format(args.model, args.dataset))
+    args = load_hyperparam(args, './integration/config/{}_AD_{}_config.json'.format(args.model, args.dataset))
     
     args.save_dir = './model/{}/save/{}/{}_AD{}/'.format(args.model, args.dataset, args.model, '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
     if not os.path.exists(args.save_dir):

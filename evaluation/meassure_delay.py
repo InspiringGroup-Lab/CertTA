@@ -8,7 +8,6 @@ from tqdm import tqdm
 import scapy.all as scapy
 from pathos.multiprocessing import ProcessingPool as Pool
 
-os.environ['CUDA_VISIBLE_DEVICES']='2'
 sys.path.append('.') # run in directory: CertTA_public/
 from evaluation.utilities import *
 from evaluation.opts import smoothing_opts, attack_opts, training_opts
@@ -179,7 +178,7 @@ def test(args, model, test_flows):
         else:
             n_jobs = 32
         # Smoothing & Data preprocessing
-        if args.smoothed == 'CertTA':
+        if args.smoothed in ['CertTA', 'RSDel']:
             if args.pr_sel is not None:
                 d_sel = int(np.ceil(args.pr_sel * packet_num))
             
@@ -272,8 +271,7 @@ def test(args, model, test_flows):
     
     avg_smoothing_time = np.mean(smoothing_times)
     avg_inference_time = np.mean(inference_times)
-    with open(args.result_dir + 'delay.txt', 'w') as fp:
-        fp.writelines("| Average Smoothing time {:6.3f} | Average Inference time {:6.3f} | \n".format(avg_smoothing_time, avg_inference_time))
+    print("| Average Certification Delay {:6.3f}s |".format(avg_smoothing_time + avg_inference_time))
 
                 
 def main():
@@ -281,9 +279,9 @@ def main():
     
     parser.add_argument("--dataset", default="CICDOH20", choices=['CICDOH20', 'TIISSRC23'])
     parser.add_argument("--model", default="DF", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'TrafficFormer', 'YaTC'])
-    parser.add_argument("--augment", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--augment", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='train with the smoothing samples (perturbed flows)')
-    parser.add_argument("--smoothed", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--smoothed", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='test with randomized smoothing')
     smoothing_opts(parser)
     attack_opts(parser)
@@ -295,30 +293,20 @@ def main():
     print('Loading the model hyperparameters from the config file.')
     args = load_hyperparam(args, './evaluation/config/{}_{}_config.json'.format(args.model, args.dataset))
     
-    if args.smoothed == 'CertTA': # Parameters for smoothing samples generation
+    if args.smoothed in ['CertTA', 'RSDel']: # Parameters for smoothing samples generation
+        if args.smoothed == 'RSDel':
+            args.beta_length, args.beta_time_ms, args.pr_sel = None, None, 1 - args.pr_del
         args.smoothing_params = {
             'beta_length': args.beta_length,
             'beta_time_ms': args.beta_time_ms,
             'pr_sel': args.pr_sel,
         }
     elif args.smoothed == 'BARS' or args.augment == 'BARS':
-        if model in ['kFP', 'Whisper']:
+        if args.model in ['kFP', 'Whisper']:
             raise Exception('BARS is not applicable to the {} model'.format(args.model))
 
     args.save_dir = './model/{}/save/{}/{}/'.format(args.model, args.dataset, model_name_generator(args))
     print('save dir: {}'.format(args.save_dir))
-    args.result_dir = args.save_dir + ('base/' if args.smoothed is None else '{}/'.format(args.smoothed))
-    print('smoothed:', args.smoothed)
-    if args.attack is None:
-        args.result_dir += 'clean/'
-        print('clean test set')
-    else:
-        attack_name = attack_name_generator(args)
-        args.attack_set_path = './attack/{}/{}/{}/attack.json'.format(args.attack, args.dataset, attack_name)
-        args.result_dir += '{}/{}/'.format(args.attack, attack_name)
-        print('attack name:', attack_name)
-    if not os.path.exists(args.result_dir):
-        os.makedirs(args.result_dir)
     print('--------------------------------------')
 
     print('Loading the dataset.')

@@ -1,0 +1,602 @@
+[
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052674.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 54,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59480/1585026171.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T09:33:20.246942/TCP_8-8-4-4_443_192-168-20-206_57768/1585139306.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 68,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T09:33:20.246942/TCP_8-8-4-4_443_192-168-20-206_57768/1585139434.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T09:33:20.246942/TCP_8-8-4-4_443_192-168-20-206_57768/1585139212.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017635.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 48,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017906.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 79,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017943.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 94,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056383.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T09:33:20.246942/TCP_8-8-4-4_443_192-168-20-206_57768/1585139149.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052792.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109128.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 52,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017758.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052883.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108838.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109331.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T15:35:03.863020/TCP_8-8-4-4_443_192-168-20-206_57872/1585161274.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108801.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109303.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 50,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T22:08:47.760282/TCP_8-8-4-4_443_192-168-20-206_57984/1585184505.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T15:35:03.863020/TCP_8-8-4-4_443_192-168-20-206_57872/1585161245.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 80,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052645.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 98,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108826.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 51,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59476/1585026064.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 72,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T11:25:12.260668/TCP_9-9-9-11_443_192-168-20-144_60688/1585059763.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109255.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 45,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017742.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108869.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108970.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T15:35:03.863020/TCP_8-8-4-4_443_192-168-20-206_57872/1585160875.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T02:05:09.942654/TCP_8-8-4-4_443_192-168-20-206_57634/1585112383.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh5_2020-03-25T09:33:21.340706/TCP_8-8-4-4_443_192-168-20-207_60026/1585139179.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109166.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108988.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T02:05:09.942654/TCP_8-8-4-4_443_192-168-20-206_57634/1585112301.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 76,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056210.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 0.99,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056115.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109039.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 52,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585056480.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T15:35:03.863020/TCP_8-8-4-4_443_192-168-20-206_57872/1585161109.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585109211.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T01:08:58.587571/TCP_8-8-4-4_443_192-168-20-206_57612/1585108886.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T10:29:29.225786/TCP_9-9-9-11_443_192-168-20-204_41634/1585055973.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 32,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59476/1585026099.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T15:35:03.863020/TCP_8-8-4-4_443_192-168-20-206_57872/1585161294.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-23T23:46:21.044406/TCP_9-9-9-11_443_192-168-20-204_41436/1585017766.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 52,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59464/1585025777.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 68,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_default-tunnel_dnsgoogle_doh4_2020-03-25T09:33:20.246942/TCP_8-8-4-4_443_192-168-20-206_57768/1585139467.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 50,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh1_2020-03-24T02:06:08.840517/TCP_9-9-9-11_443_192-168-20-144_59478/1585026159.pcap"
+ },
+ {
+  "label": 2,
+  "c_A": 2,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNSCat2/dsncat2_txt-tunnel_99911_doh2_2020-03-24T09:33:30.718207/TCP_9-9-9-11_443_192-168-20-204_41618/1585052926.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh7_2020-03-20T04:27:17.650984/TCP_9-9-9-11_443_192-168-20-209_60960/1584689192.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T08:38:35.336563/TCP_9-9-9-11_443_192-168-20-212_59156/1584703814.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T02:46:23.296778/TCP_9-9-9-11_443_192-168-20-206_39620/1584596177.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh1_2020-03-20T06:21:24.072898/TCP_9-9-9-11_443_192-168-20-144_49390/1584695822.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh9_2020-03-19T06:41:44.400941/TCP_9-9-9-11_443_192-168-20-211_46238/1584610712.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_dnsgoogle_doh9_2020-03-20T07:41:22.365599/TCP_8-8-4-4_443_192-168-20-211_36234/1584700783.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584611988.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 99,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh4_2020-03-19T06:18:41.844442/TCP_9-9-9-11_443_192-168-20-206_39666/1584609262.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh8_2020-03-20T04:50:09.848335/TCP_9-9-9-11_443_192-168-20-210_43918/1584690572.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 48,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh3_2020-03-19T02:46:22.426507/TCP_9-9-9-11_443_192-168-20-205_46198/1584596277.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 48,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T02:46:26.584852/TCP_9-9-9-11_443_192-168-20-209_60680/1584596341.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 48,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584611778.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 39,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T05:28:56.000154/TCP_9-9-9-11_443_192-168-20-210_43662/1584606445.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh6_2020-03-19T08:13:45.781049/TCP_9-9-9-11_443_192-168-20-208_33402/1584616086.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh8_2020-03-20T07:29:51.882242/TCP_9-9-9-11_443_192-168-20-210_43952/1584699963.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh8_2020-03-19T07:04:56.506456/TCP_9-9-9-11_443_192-168-20-210_43684/1584611872.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 40,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh5_2020-03-19T08:36:48.330453/TCP_9-9-9-11_443_192-168-20-207_50660/1584617665.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 52,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T02:00:16.920476/TCP_9-9-9-11_443_192-168-20-209_60672/1584593511.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 62,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh10_2020-03-20T09:47:46.753526/TCP_9-9-9-11_443_192-168-20-212_59168/1584707995.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh2_2020-03-20T09:24:34.129406/TCP_9-9-9-11_443_192-168-20-204_40490/1584706601.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh5_2020-03-19T08:36:48.330453/TCP_9-9-9-11_443_192-168-20-207_50660/1584617297.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T02:00:16.920476/TCP_9-9-9-11_443_192-168-20-209_60672/1584593636.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh7_2020-03-19T05:05:27.574916/TCP_9-9-9-11_443_192-168-20-209_60704/1584604835.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_null-64-tunnel_99911_doh2_2020-03-20T09:24:34.129406/TCP_9-9-9-11_443_192-168-20-204_40490/1584706982.pcap"
+ },
+ {
+  "label": 3,
+  "c_A": 3,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/Iodine/iodine_srv-32-tunnel_99911_doh6_2020-03-19T09:22:38.328779/TCP_9-9-9-11_443_192-168-20-208_33414/1584620216.pcap"
+ }
+]

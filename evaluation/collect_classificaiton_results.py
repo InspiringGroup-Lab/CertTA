@@ -16,10 +16,10 @@ def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument("--dataset", default="CICDOH20", choices=['CICDOH20', 'TIISSRC23'])
-    parser.add_argument("--model", default="DF", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'YaTC', 'TrafficFormer'])
-    parser.add_argument("--augment", type=str, default=None, choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--model", default="YaTC", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'YaTC', 'TrafficFormer'])
+    parser.add_argument("--augment", type=str, default=None, choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='train with the smoothing samples (perturbed flows)')
-    parser.add_argument("--smoothed", type=str, default=None, choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--smoothed", type=str, default=None, choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='test with randomized smoothing')
     parser.add_argument("--truncate", type=float, default=None, choices=[None, 0.25, 0.5, 0.75])
     smoothing_opts(parser)
@@ -36,9 +36,12 @@ def main():
     with open(args.dataset_dir + 'statistics.json') as fp:
         statistics_json = json.load(fp)
     args.labels_num = statistics_json['label_num']
+    args.pcap_level = args.model in ['YaTC', 'TrafficFormer']
     args.max_flow_length = {'CICDOH20': 100, 'TIISSRC23': 100}[args.dataset]
     
-    if args.smoothed == 'CertTA': # Parameters for smoothing samples generation
+    if args.smoothed in ['CertTA', 'RSDel']: # Parameters for smoothing samples generation
+        if args.smoothed == 'RSDel':
+            args.beta_length, args.beta_time_ms, args.pr_sel = None, None, 1 - args.pr_del
         args.smoothing_params = {
             'beta_length': args.beta_length,
             'beta_time_ms': args.beta_time_ms,
@@ -154,7 +157,7 @@ def main():
             n = correct_clean_result['packet_num']
             p_A = p_A_lower_confidence_bound(correct_clean_result['p_A'], args.samples_num, args.alpha)
 
-            if args.smoothed == 'CertTA':
+            if args.smoothed in ['CertTA', 'RSDel']:
                 # Calculate the perturbation distances between attack sample and clean sample
                 if args.pr_sel is not None:
                     d = int(np.ceil(args.pr_sel * n))
@@ -198,7 +201,7 @@ def main():
                     dis_points.append((dis_del, dis_ins, dis_sub, dis_additive))
 
                 # Calculate certified radius on clean sample
-                S_jnt = radius_joint_exp(p_A, d, args.beta_length, args.beta_time_ms, n)
+                S_jnt = radius_joint_exp(p_A, d, args.beta_length, args.beta_time_ms, n, args.pcap_level)
 
                 # Check if the attack sample is within the robustness region of the clean sample
                 for dis_point in dis_points:

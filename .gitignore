@@ -1,3 +1,2 @@
+model/TrafficFormer/models/pretrain_model.bin
 *.pcap
-*.bin
-*.pth

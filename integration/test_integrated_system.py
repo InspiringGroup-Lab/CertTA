@@ -111,6 +111,7 @@ def anomaly_detection(args, model_AD, test_flows, distance_threshold):
     normal_flows = []
     anomalies = []
     
+    args.model = args.model_AD
     if args.model_AD in ['Kitsune']:
         model_AD.eval()
     
@@ -133,15 +134,15 @@ def anomaly_detection(args, model_AD, test_flows, distance_threshold):
                 input_output_batch[k].append(instance[k])
 
         # Traditional ML models
-        if args.model in ['KMeans', 'Whisper']:
+        if args.model_AD in ['KMeans', 'Whisper']:
             test_distances = model_AD.test(input_output_batch[0])
         # DL/Transformer-based models
-        elif args.model == 'Kitsune':
+        elif args.model_AD == 'Kitsune':
             src = torch.tensor(input_output_batch[0]).to(args.device)
             test_distances = model_AD(src)
         
         for i, instance_idx in enumerate(range(batch_idx * args.batch_size, min(len(instances), (batch_idx + 1) * args.batch_size))):
-            test_flows[instance_idx]['AD_distance'] = test_distances[i]
+            test_flows[instance_idx]['AD_distance'] = float(test_distances[i])
             if test_distances[i] >= distance_threshold:
                 anomalies.append(test_flows[instance_idx])
             else:
@@ -160,7 +161,7 @@ def one_of_k_test(args, model, test_flows, ith):
         flow = test_flows[i]
             
         # Smoothing & Data preprocessing
-        if args.smoothed == 'CertTA':
+        if args.smoothed in ['CertTA', 'RSDel']:
             smoothing_samples = generate_smoothing_samples(flow, args.smoothing_params, args.samples_num, args.pcap_level)
             instances = [flow_preprocessing(sample, args) for sample in smoothing_samples]
         elif args.smoothed == 'VRS':
@@ -243,9 +244,9 @@ def main():
     parser.add_argument("--model_AD", default="Kitsune", choices=['KMeans', 'Whisper', 'Kitsune'])
     parser.add_argument("--FPR_threshold", type=float, default=0.01)
     parser.add_argument("--model", default="YaTC", choices=['kFP', 'Kitsune', 'Whisper', 'DF', 'TrafficFormer', 'YaTC'])
-    parser.add_argument("--augment", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--augment", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='train with the smoothing samples (perturbed flows)')
-    parser.add_argument("--smoothed", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS'],
+    parser.add_argument("--smoothed", type=str, default='CertTA', choices=['CertTA', 'VRS', 'BARS', 'RSDel'],
                         help='test with randomized smoothing')
     parser.add_argument("--truncate", type=float, default=None, choices=[None, 0.25, 0.5, 0.75])
     smoothing_opts(parser)
@@ -255,16 +256,19 @@ def main():
     print('Testing the integration of the {}_AD model and the {}-certified {} model.'.format(args.model_AD, args.smoothed, args.model))
 
     print('Loading the model hyperparameters from the config file.')
+    args = load_hyperparam(args, './integration/config/{}_AD_{}_config.json'.format(args.model_AD, args.dataset))
     args = load_hyperparam(args, './evaluation/config/{}_{}_config.json'.format(args.model, args.dataset))
     
-    if args.smoothed == 'CertTA': # Parameters for smoothing samples generation
+    if args.smoothed in ['CertTA', 'RSDel']: # Parameters for smoothing samples generation
+        if args.smoothed == 'RSDel':
+            args.beta_length, args.beta_time_ms, args.pr_sel = None, None, 1 - args.pr_del
         args.smoothing_params = {
             'beta_length': args.beta_length,
             'beta_time_ms': args.beta_time_ms,
             'pr_sel': args.pr_sel,
         }
     elif args.smoothed == 'BARS' or args.augment == 'BARS':
-        if model in ['kFP', 'Whisper']:
+        if args.model in ['kFP', 'Whisper']:
             raise Exception('BARS is not applicable to the {} model'.format(args.model))
 
     args.save_dir_AD = './model/{}/save/{}/{}_AD{}/'.format(args.model_AD, args.dataset, args.model_AD, '_truncate_{}'.format(args.truncate) if args.truncate is not None else '')
@@ -300,10 +304,10 @@ def main():
     args.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     args, model_AD = initialize_model_AD(args)
     print(torch.cuda.get_device_name(args.device))
-    if args.model in ['KMeans', 'Kitsune']:
+    if args.model_AD in ['KMeans', 'Kitsune']:
         normalizer_AD = Normalizer()
-        normalizer_AD.norm_max = np.load(args.save_dir + "norm_max.npy")
-        normalizer_AD.norm_min = np.load(args.save_dir + "norm_min.npy")
+        normalizer_AD.norm_max = np.load(args.save_dir_AD + "norm_max.npy")
+        normalizer_AD.norm_min = np.load(args.save_dir_AD + "norm_min.npy")
         args.normalizer = normalizer_AD
     
     # Set the distance threshold according to FPR threshold
@@ -312,7 +316,7 @@ def main():
     distance_threshold = train_distances[int(np.floor(len(train_distances) * args.FPR_threshold))]
 
     print('Performing anomaly detection: threshold {}.'.format(distance_threshold))
-    normal_flows, anomalies = anomaly_detection(args, model_AD, test_flows, distance_threshold)
+    normal_flows, anomalies = anomaly_detection(copy.deepcopy(args), model_AD, test_flows, distance_threshold)
     anomalies_res = [{
         'label': flow['label'],
         'c_A': -1, # c_A = -1 for anomalies
