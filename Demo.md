@@ -512,7 +512,7 @@ cat model/YaTC/save/CICDOH20/YaTC_CertTA_beta_length_200_beta_time_ms_40_pr_sel_
 # | true label    3 | samples num    100 | success rate  0.980 | fail rate  0.020 |
 ```
 
-### 6. Summarized Results
+### 7. Summarized Results
 
 The reproduced results on adversarial flows are summarized as follows, which can be compared with the results in Figure 8 of our paper.
 
