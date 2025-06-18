@@ -188,9 +188,11 @@ The plotted figure will be saved as follows, which can be compared with the sub-
                             └── attack_intensities_at_certifiedacc
 ```
 
-<img src="./Demo_certifiedacc_cdf.jpg" alt="Certified accuracy curves under different attack intensities." style="display: block; margin: auto; width: 70%;" />
+<div style="text-align: center;">
+    <img src="./Demo_certifiedacc_cdf.jpg" alt="Certified accuracy curves under different attack intensities." width="70%" />
+</div> 
 
-In the `attack_intensities_at_certifiedacc` file, we quantify the attack intensities $(n^{\textsf{ins}}, r^{\textsf{add}}_*)$ that are strong enough to degrade CertTA's certified accuracy to a pre-defined lower bound threshold $T_{\textsf{lower}}$. When $T_{\textsf{lower}} = 0.99$, we select three attack intensities $(5, 0), (0, 619), (2, 556)$ to generate adversarial flows and evaluate baseline certification methods against these flows.
+In the `attack_intensities_at_certifiedacc` file, we quantify the attack intensities $(n^{\textsf{ins}}, r^{\textsf{add}}_*)=$ that are strong enough to degrade CertTA's certified accuracy to a pre-defined lower bound threshold $T_{\textsf{lower}}$. When $T_{\textsf{lower}} = 0.99$, we select three attack intensities $(5, 0), (0, 619), (2, 556)$ to generate adversarial flows and evaluate baseline certification methods against these flows.
 
 ### 4. Generate Adversarial Flows
 
@@ -673,12 +675,18 @@ The plotted figure will be saved as follows, which can be compared with the resu
 
 * Truncated setting 0.25
 
-    <img src="./Demo_certifiedacc_cdf_truncate_0.25.jpg" alt="Certified accuracy curves under different attack intensities (Truncated setting 0.25)." style="display: block; margin: auto; width: 70%;" />
+    <div style="text-align: center;">
+        <img src="./Demo_certifiedacc_cdf_truncate_0.25.jpg" alt="Certified accuracy curves under different attack intensities (Truncated setting 0.25)." width="70%" />
+    </div> 
 
 * Truncated setting 0.5
 
-    <img src="./Demo_certifiedacc_cdf_truncate_0.5.jpg" alt="Certified accuracy curves under different attack intensities (Truncated setting 0.5)." style="display: block; margin: auto; width: 70%;" />
+    <div style="text-align: center;">
+        <img src="./Demo_certifiedacc_cdf_truncate_0.5.jpg" alt="Certified accuracy curves under different attack intensities (Truncated setting 0.5)." width="70%" />
+    </div> 
 
 * Truncated setting 0.75
 
-    <img src="./Demo_certifiedacc_cdf_truncate_0.75.jpg" alt="Certified accuracy curves under different attack intensities (Truncated setting 0.75)." style="display: block; margin: auto; width: 70%;" />
+    <div style="text-align: center;">
+        <img src="./Demo_certifiedacc_cdf_truncate_0.75.jpg" alt="Certified accuracy curves under different attack intensities (Truncated setting 0.75)." width="70%" />
+    </div> 
