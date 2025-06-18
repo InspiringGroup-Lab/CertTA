@@ -35,7 +35,7 @@ To ensure the proper functioning of our artifacts, please follow the commands be
 
 1. Ensure that you have `conda` installed on your system. If you do not have `conda`, you can install it as part of the Anaconda distribution or Miniconda.
 2. Open a terminal or command prompt.
-3. Create a new conda environment with the name of your choice (e.g., `CertTA`) and intall all the required packages listed in `environment.yml`:
+3. Create a new conda environment with the name of your choice (e.g., `CertTA`) and install all the required packages listed in `environment.yml`:
    
    ```bash
    conda create -n CertTA -f environment.yml
@@ -68,7 +68,7 @@ In this demo, we will use the CICDOH20 dataset and the pre-trained YaTC model to
 
 Check out [Demo.md](https://github.com/InspiringGroup-Lab/CertTA/blob/main/Demo.md) and have fun with CertTA!
 
-> **Fully running all the experiments in our paper** - involving two traffic datasets, three adversarial attack methodologies, six supervised traffic analysis systems, CertTA and three baseline certification methods, three unsupervised anomaly detection systems and an integrated system - **might take weeks to complete**. You can follow this demo to quickly verify the major claims made by our paper.
+> **Fully running all the experiments in our paper** - involving two traffic datasets, three adversarial attack methodologies, six supervised traffic analysis systems, CertTA and three baseline certification methods, three unsupervised anomaly detection systems and an integrated system - **might take several weeks to complete**. You can follow this demo to quickly verify the major claims made in our paper.
 
 # Credit
 

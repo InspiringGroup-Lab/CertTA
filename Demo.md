@@ -166,7 +166,7 @@ The reproduced results on clean traffic are summarized as follows, which can be 
 
 ![Classification performance of certified and non-certified traffic analysis models on clean traffic.](./Demo_clean_results.jpg)
 
-### 3. Meassure the Robustness Region of CertTA-certified Model
+### 3. Measure the Robustness Region of CertTA-certified Model
 
 Based on the multi-modal robustness region derivation in Theorem 1 of our paper, we can collect the classification results saved by `test.py` to plot the certified accuracy curves under different attack intensities:
 
