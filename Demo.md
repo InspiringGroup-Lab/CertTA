@@ -641,7 +641,14 @@ cat model/YaTC/save/CICDOH20/YaTC_CertTA_beta_length_200_beta_time_ms_40_pr_sel_
 
 cat model/YaTC/save/CICDOH20/YaTC_CertTA_beta_length_200_beta_time_ms_40_pr_sel_0.1_truncate_0.75/CertTA/clean/empirical_acc.txt
 
-# ...
+# | Empirical Accuracy  0.998, Macro  0.998
+# | Macro| precision  0.998| recall  0.998| f1  0.997
+
+# | true label    0 | samples num    300 | accuracy  1.000 | precision  1.000 | recall  1.000 | f1  1.000 |    300      0      0      0 |
+# | true label    1 | samples num    100 | accuracy  1.000 | precision  1.000 | recall  1.000 | f1  1.000 |      0    100      0      0 |
+# | true label    2 | samples num    100 | accuracy  1.000 | precision  0.990 | recall  1.000 | f1  0.995 |      0      0    100      0 |
+# | true label    3 | samples num    100 | accuracy  0.990 | precision  1.000 | recall  0.990 | f1  0.995 |      0      0      1     99 |
+# | Average Accuracy  0.998 |
 ```
 
 Collect the classification results saved by `test.py` to plot the certified accuracy curves under different attack intensities:
