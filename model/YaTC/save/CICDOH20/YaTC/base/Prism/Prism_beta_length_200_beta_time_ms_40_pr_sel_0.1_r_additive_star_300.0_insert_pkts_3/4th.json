@@ -1,0 +1,602 @@
+[
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 91,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_43336/1585670261.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 34,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_48912/1585697252.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 58,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_49352/1585697306.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_58224/1585694414.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637755.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 90,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637519.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_34076/1585694910.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 83,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_60850/1585694750.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 68,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_48912/1585697246.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 89,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625391.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_50686/1585697434.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_44332/1585670403.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 36,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_48616/1585697187.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 59,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_60850/1585694754.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 62,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_44994/1585670479.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_43926/1585670364.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585638040.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 58,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_34076/1585694897.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 91,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637467.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 67,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637657.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 45,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637797.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637655.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 52,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637774.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_44332/1585670386.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 36,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637599.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 58,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_51720/1585697532.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625282.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 88,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_52222/1585697625.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 44,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_60850/1585694735.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 54,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_42350/1585670163.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 34,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_59562/1585694576.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_59562/1585694615.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625727.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 70,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_58938/1585694534.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637884.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 75,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_49352/1585697283.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 86,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_50686/1585697439.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 59,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_50686/1585697411.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 99,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_58938/1585694526.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 61,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637918.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 38,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625817.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 42,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_43336/1585670288.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_52222/1585697612.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 67,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_52222/1585697583.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 51,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625249.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_51264/1585697509.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 44,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625375.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 43,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_51720/1585697536.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 53,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585638020.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 92,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625311.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 36,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637689.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 43,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637787.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 65,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_33540/1585694840.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 59,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_49352/1585697323.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 64,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_49352/1585697309.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 34,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_41628/1585670053.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_60172/1585694645.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625588.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 51,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_32878/1585694799.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 43,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_42350/1585670185.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_52222/1585697600.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 42,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637756.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637667.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 43,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_51720/1585697574.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 83,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_52222/1585697629.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 33,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637582.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh3_2020-03-31T00:37:08.612879/TCP_8-8-4-4_443_192-168-20-205_39212/1585625432.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 42,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_32878/1585694796.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_59562/1585694603.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 67,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T13:04:27.600594/TCP_8-8-4-4_443_192-168-20-144_46318/1585670665.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 35,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637748.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 67,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_48912/1585697226.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 100,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T19:50:45.493418/TCP_8-8-4-4_443_192-168-20-144_32878/1585694811.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 74,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh4_2020-03-31T04:00:44.519477/TCP_8-8-4-4_443_192-168-20-206_41566/1585637676.pcap"
+ },
+ {
+  "label": 1,
+  "c_A": 0,
+  "p_A": 1.0,
+  "packet_num": 55,
+  "input_vector": "None",
+  "source_file": "./dataset/CICDOH20/pcap/DNS2TCP/dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31T20:35:43.376792/TCP_8-8-4-4_443_192-168-20-144_52222/1585697595.pcap"
+ }
+]

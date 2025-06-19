@@ -1,0 +1,5 @@
+| Defense Success Rate  0.995, Macro  0.993
+| true label    0 | samples num    300 | success rate  1.000 | fail rate  0.000 |
+| true label    1 | samples num    100 | success rate  0.990 | fail rate  0.010 |
+| true label    2 | samples num    100 | success rate  1.000 | fail rate  0.000 |
+| true label    3 | samples num    100 | success rate  0.980 | fail rate  0.020 |

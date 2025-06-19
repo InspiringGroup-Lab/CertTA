@@ -280,11 +280,11 @@ The classification results of adversarial flows will be saved in json files as f
 Based on the classification results of the clean flows without adversarial perturbations, we can derive the robustness region to meassure the certified accuracy against adversarial flows:
 
 ```bash
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 0 --attack_insert_pkts 5 # packet insertion only
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 0 --attack_insert_pkts 5 # packet insertion only
 
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 619 --attack_insert_pkts 0 # additive perturbation only
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 619 --attack_insert_pkts 0 # additive perturbation only
 
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 556 --attack_insert_pkts 2 # packet insertion & additive perturbation
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 556 --attack_insert_pkts 2 # packet insertion & additive perturbation
 ```
 
 The certified accuracy of each traffic class and their macro aggregation will be saved as follows:
@@ -447,7 +447,7 @@ For example, we evaluate the CertTA-certified YaTC model against the adversarial
 ```bash
 python evaluation/test.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 500 --attack_insert_pkts 5
 
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 500 --attack_insert_pkts 5
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --attack Blanket --attack_beta_length 200 --attack_beta_time_ms 40 --attack_pr_sel 0.1 --attack_r_additive_star 500 --attack_insert_pkts 5
 ```
 
 The accuracy/precision/recall/f1-score of each traffic class and their macro aggregation will be saved as follows:
@@ -581,17 +581,17 @@ Evaluate truncated models on clean traffic:
 # Truncated Setting: 0.25
 python evaluation/test.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.25
 
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.25
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.25
 
 # Truncated Setting: 0.5
 python evaluation/test.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.5
 
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.5
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.5
 
 # Truncated Setting: 0.75
 python evaluation/test.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.75
 
-python evaluation/collect_classificaiton_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.75
+python evaluation/collect_classification_results.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA --truncate 0.75
 ```
 
 The reproduced results will be saved as follows, which can be compared with the results in Table 7:

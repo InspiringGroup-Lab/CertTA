@@ -1,0 +1,6 @@
+| Certified Accuracy  0.992, Macro  0.988 |
+
+| true label    0 | samples num    300 | certified accuracy  1.000 |
+| true label    1 | samples num    100 | certified accuracy  0.990 |
+| true label    2 | samples num    100 | certified accuracy  0.990 |
+| true label    3 | samples num    100 | certified accuracy  0.970 |
