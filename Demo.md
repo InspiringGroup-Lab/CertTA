@@ -168,7 +168,7 @@ The reproduced results on clean traffic are summarized as follows, which can be 
 
 ### 3. Measure the Robustness Region of CertTA-certified Model
 
-Based on the multi-modal robustness region derivation in Theorem 1 of our paper, we can collect the classification results saved by `test.py` to plot the certified accuracy curves under different attack intensities:
+Based on the multi-modal robustness region derivation in Theorem 1 of our paper, we can collect the classification results saved by `test.py` to plot the certified accuracy curves under different robustness radius:
 
 ```bash
 python evaluation/plot_certifiedacc_cdf.py --dataset CICDOH20 --model YaTC --augment CertTA --smoothed CertTA # CertTA-certified
