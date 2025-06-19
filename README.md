@@ -23,7 +23,7 @@ Our artifact includes the following directories:
 
 * [BARS/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/BARS) contains the implementations of a baseline certification method BARS.
 
-* [evaluation/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/evaluation) contains the source codes for training and evaluating certified traffic analysis models. Our framework supports both CertTA and baseline certification methods (i.e., VRS, BARS and RS-Del) for building certified traffic analysis models.
+* [evaluation/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/evaluation) contains the source codes for training and evaluating certified traffic analysis models. Our prototype supports both CertTA and baseline certification methods (i.e., VRS, BARS and RS-Del) for building certified traffic analysis models.
 
 * [integration/](https://github.com/InspiringGroup-Lab/CertTA/tree/main/integration) contains the source codes for building and evaluating the integrated system of anomaly detectors and certified traffic analysis models.
 
