@@ -8,8 +8,8 @@ import numpy as np
 # Handle command line arguments
 parser = argparse.ArgumentParser(description="Generate Amoeba attack actions")
 parser.add_argument("--dataset", type=str, default="CICDOH20", help="Dataset to use (CICDOH20 or TIISSRC23)")
-parser.add_argument("--attack_beta_length", type=float, default=100)
-parser.add_argument("--attack_beta_time_ms", type=float, default=40)
+parser.add_argument("--attack_beta_length", type=int, default=100)
+parser.add_argument("--attack_beta_time_ms", type=int, default=40)
 parser.add_argument("--attack_pr_sel", type=float, default=0.15)
 parser.add_argument("--attack_r_additive_star", type=float, default=21.958)
 parser.add_argument("--attack_insert_pkts", type=int, default=2)
@@ -109,8 +109,8 @@ for i in range(len(pad_buget_list)):
 # l2_norm = args.attack_r_additive_star
 # # max_insert_pkts = 0
 # delay_max = 0.002
-base_insert_len = 1000
-base_delay = 0.05
+base_insert_len = 1600
+base_delay = 0.045
 # prob = -0.6 + l2_norm/20
 # bias = 1.1 + l2_norm/20
 # delay_prob = 0.8
@@ -126,6 +126,7 @@ for flow in attack_data:
     actions = flow['actions']
     new_actions = []
     action_budgets = [(action['value']/ args.attack_beta_length) * (args.attack_beta_length + args.attack_beta_time_ms) + (action['added_delay'] * 1000 / args.attack_beta_time_ms) * (args.attack_beta_length + args.attack_beta_time_ms) for action in actions if action['action'] == 'padding' or action['action'] == 'inaction']
+    # print("action_budgets: ", action_budgets)
     n = len([action for action in actions if action['action'] == 'padding' or action['action'] == 'inaction'])
     # print(n)
     d = int(n - int((1 - args.attack_pr_sel) * n)) + args.attack_insert_pkts
@@ -133,6 +134,7 @@ for flow in attack_data:
     tops = torch.argsort(torch.tensor(action_budgets), descending = True)
     # print(tops)
     l2_norm_list = [torch.sum(torch.tensor(action_budgets)[tops[i:d+i]]) for i in range(n-d+1)]
+    # print("l2_norm_list: ", l2_norm_list)
     if len(l2_norm_list) < 1 or l2_norm_list[-1] >= args.attack_r_additive_star:
         choice = 0
         inserted_pkts = 0
@@ -142,16 +144,16 @@ for flow in attack_data:
             if action['action'] == 'padding' or action['action'] == 'inaction':
                 new_actions.append({
                     'action': 'padding',
-                    'value': int(args.attack_beta_length / (args.attack_beta_length + args.attack_beta_time_ms) * (args.attack_r_additive_star / d /3) * 2 * ( 1 - np.random.rand())),
-                    'added_delay': float(args.attack_beta_time_ms / (args.attack_beta_length + args.attack_beta_time_ms) * (args.attack_r_additive_star / d /3) / 1000)* 2 * ( 1 - np.random.rand()) if np.random.rand() < 0.5 and args.attack_insert_pkts!=0 else 0
+                    'value': int(args.attack_beta_length / (args.attack_beta_length + args.attack_beta_time_ms) * (args.attack_r_additive_star / d /3) * 2 * ( 1 - 0.5*np.random.rand())),
+                    'added_delay': float(args.attack_beta_time_ms / (args.attack_beta_length + args.attack_beta_time_ms) * (args.attack_r_additive_star / d /3) / 1000)* 2 * ( 1 - 0.5*np.random.rand()) if np.random.rand() < 0.5 and args.attack_insert_pkts!=0 else 0
                     # 'added_delay': delay_max * np.random.rand() if np.random.rand() < delay_prob else 0
                 })
             elif action['action'] == 'inserting':
                 if inserted_pkts < args.attack_insert_pkts:
                     new_actions.append({
                         'action': 'inserting',
-                        'value': int( base_insert_len ),
-                        'added_delay': base_delay
+                        'value': int( base_insert_len * ( 1 + 0.5*np.random.rand())),
+                        'added_delay': base_delay * ( 1 + 0.5*np.random.rand())
                     })
                     inserted_pkts += 1
                 else:
@@ -170,13 +172,15 @@ for flow in attack_data:
             for i in range(args.attack_insert_pkts - inserted_pkts):
                 new_actions.append({
                     'action': 'inserting',
-                    'value': int( base_insert_len),
-                    'added_delay': base_delay
+                    'value': int( base_insert_len * ( 1 + 0.5*np.random.rand())),
+                    'added_delay': base_delay *( 1 + 0.5*np.random.rand())
                 })
     else:
         choice = 1
         min_idx = min([i for i, val in enumerate(l2_norm_list) if val <= args.attack_r_additive_star])
-        remaining_budget = args.attack_r_additive_star ** 2 - l2_norm_list[min_idx] - 1e-5
+        # print(tops[:min_idx])
+        # print(tops[min_idx:])
+        remaining_budget = args.attack_r_additive_star - l2_norm_list[min_idx] - 1e-5
         remaining_budget = max(remaining_budget, 0)
         least_budget = action_budgets[tops[min_idx + d - 1]]
         # if least_budget == 0:
@@ -184,33 +188,34 @@ for flow in attack_data:
         #     assert False
         padding_idx = 0
         inserted_pkts = 0
+        # print(remaining_budget)
         # print(int(beta_length * np.sqrt(least_budget)))
         for action in actions:
             if action['action'] == 'padding' or action['action'] == 'inaction':
                 if padding_idx in tops[:min_idx]:
                     new_actions.append({
                         'action': 'padding',
-                        'value': action['value'],
-                        'added_delay': action['added_delay']
+                        'value': int(args.attack_beta_length / (args.attack_beta_length + args.attack_beta_time_ms) * (remaining_budget / n /3) * 2 * ( 1 - 0.5*np.random.rand())),
+                        'added_delay': float(args.attack_beta_time_ms / (args.attack_beta_length + args.attack_beta_time_ms) * (remaining_budget / n /3) / 1000)* 2 * ( 1 - 0.5*np.random.rand())
                     })
                 elif padding_idx == tops[min_idx]:
                     new_actions.append({
                         'action': 'padding',
-                        'value': int(args.attack_beta_length * (action_budgets[padding_idx] + remaining_budget/d) / (args.attack_beta_length + args.attack_beta_time_ms)) * 2 * ( 1 - np.random.rand()),
-                        'added_delay': 0
+                        'value': max(action['value'], 4),
+                        'added_delay': action['added_delay']
                     })
                 else:
                     new_actions.append({
                         'action': 'padding',
-                        'value': int(args.attack_beta_length * (action_budgets[padding_idx] + remaining_budget/d) / (args.attack_beta_length + args.attack_beta_time_ms)) * 2 * ( 1 - np.random.rand()),
-                        'added_delay': 0
+                        'value': max(action['value'], 4),
+                        'added_delay': action['added_delay']
                     })
                 padding_idx += 1
             elif action['action'] == 'inserting' and inserted_pkts < args.attack_insert_pkts:
                 new_actions.append({
                     'action': 'inserting',
-                    'value': int( base_insert_len ),
-                    'added_delay': base_delay
+                    'value': int( base_insert_len  * ( 1 + 0.5*np.random.rand())),
+                    'added_delay': base_delay *( 1 + 0.5*np.random.rand())
                 })
                 inserted_pkts += 1
             else:
@@ -219,16 +224,16 @@ for flow in attack_data:
             if np.random.rand() < 3 * args.attack_insert_pkts / n and inserted_pkts < args.attack_insert_pkts:
                 new_actions.append({
                         'action': 'inserting',
-                        'value': int( base_insert_len ),
-                        'added_delay': base_delay
+                        'value': int( base_insert_len *( 1 + 0.5*np.random.rand())),
+                        'added_delay': base_delay *( 1 + 0.5*np.random.rand())
                     })
                 inserted_pkts += 1
         if inserted_pkts < args.attack_insert_pkts:
             for i in range(args.attack_insert_pkts - inserted_pkts):
                 new_actions.append({
                     'action': 'inserting',
-                    'value': int( base_insert_len ),
-                    'added_delay': base_delay
+                    'value': int( base_insert_len *( 1 + 0.5*np.random.rand())),
+                    'added_delay': base_delay * ( 1 + 0.5*np.random.rand())
                 })
     new_n = len([action for action in new_actions if action['action'] == 'padding' or action['action'] == 'inaction'])
     assert new_n == n, f"new_n: {new_n}, n: {n}"

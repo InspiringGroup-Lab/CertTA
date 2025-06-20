@@ -400,8 +400,8 @@ def fit_attack_intensity(attack_data, args):
     """
     Fit the attack intensity based on the adversarial data.
     """
-    base_insert_len = 1000
-    base_delay = 0.05
+    base_insert_len = 1500
+    base_delay = 0.1
         
     processed_flows = []
         
@@ -409,6 +409,7 @@ def fit_attack_intensity(attack_data, args):
         actions = flow['actions']
         new_actions = []
         action_budgets = [(action['value']/ args.attack_beta_length) * (args.attack_beta_length + args.attack_beta_time_ms) + (action['added_delay'] * 1000 / args.attack_beta_time_ms) * (args.attack_beta_length + args.attack_beta_time_ms) for action in actions if action['action'] == 'padding' or action['action'] == 'inaction']
+        # print("action_budgets: ", action_budgets)
         n = len([action for action in actions if action['action'] == 'padding' or action['action'] == 'inaction'])
         # print(n)
         d = int(n - int((1 - args.attack_pr_sel) * n)) + args.attack_insert_pkts
@@ -416,6 +417,7 @@ def fit_attack_intensity(attack_data, args):
         tops = torch.argsort(torch.tensor(action_budgets), descending = True)
         # print(tops)
         l2_norm_list = [torch.sum(torch.tensor(action_budgets)[tops[i:d+i]]) for i in range(n-d+1)]
+        # print("l2_norm_list: ", l2_norm_list)
         if len(l2_norm_list) < 1 or l2_norm_list[-1] >= args.attack_r_additive_star:
             choice = 0
             inserted_pkts = 0
@@ -433,8 +435,8 @@ def fit_attack_intensity(attack_data, args):
                     if inserted_pkts < args.attack_insert_pkts:
                         new_actions.append({
                             'action': 'inserting',
-                            'value': int( base_insert_len ),
-                            'added_delay': base_delay
+                            'value': int( base_insert_len * ( 1 + 0.5*np.random.rand())),
+                            'added_delay': base_delay * ( 1 + 0.5*np.random.rand())
                         })
                         inserted_pkts += 1
                     else:
@@ -453,13 +455,15 @@ def fit_attack_intensity(attack_data, args):
                 for i in range(args.attack_insert_pkts - inserted_pkts):
                     new_actions.append({
                         'action': 'inserting',
-                        'value': int( base_insert_len),
-                        'added_delay': base_delay
+                        'value': int( base_insert_len * ( 1 + 0.5*np.random.rand())),
+                        'added_delay': base_delay *( 1 + 0.5*np.random.rand())
                     })
         else:
             choice = 1
             min_idx = min([i for i, val in enumerate(l2_norm_list) if val <= args.attack_r_additive_star])
-            remaining_budget = args.attack_r_additive_star ** 2 - l2_norm_list[min_idx] - 1e-5
+            # print(tops[:min_idx])
+            # print(tops[min_idx:])
+            remaining_budget = args.attack_r_additive_star - l2_norm_list[min_idx] - 1e-5
             remaining_budget = max(remaining_budget, 0)
             least_budget = action_budgets[tops[min_idx + d - 1]]
             # if least_budget == 0:
@@ -467,33 +471,34 @@ def fit_attack_intensity(attack_data, args):
             #     assert False
             padding_idx = 0
             inserted_pkts = 0
+            # print(remaining_budget)
             # print(int(beta_length * np.sqrt(least_budget)))
             for action in actions:
                 if action['action'] == 'padding' or action['action'] == 'inaction':
                     if padding_idx in tops[:min_idx]:
                         new_actions.append({
                             'action': 'padding',
-                            'value': action['value'],
-                            'added_delay': action['added_delay']
+                            'value': int(args.attack_beta_length / (args.attack_beta_length + args.attack_beta_time_ms) * (remaining_budget / n /3) * 2 * ( 1 - np.random.rand())),
+                            'added_delay': float(args.attack_beta_time_ms / (args.attack_beta_length + args.attack_beta_time_ms) * (remaining_budget / n /3) / 1000)* 2 * ( 1 - np.random.rand())
                         })
                     elif padding_idx == tops[min_idx]:
                         new_actions.append({
                             'action': 'padding',
-                            'value': int(args.attack_beta_length * (action_budgets[padding_idx] + remaining_budget/d) / (args.attack_beta_length + args.attack_beta_time_ms)) * 2 * ( 1 - np.random.rand()),
-                            'added_delay': 0
+                            'value': max(action['value'], 4),
+                            'added_delay': action['added_delay']
                         })
                     else:
                         new_actions.append({
                             'action': 'padding',
-                            'value': int(args.attack_beta_length * (action_budgets[padding_idx] + remaining_budget/d) / (args.attack_beta_length + args.attack_beta_time_ms)) * 2 * ( 1 - np.random.rand()),
-                            'added_delay': 0
+                            'value': max(action['value'], 4),
+                            'added_delay': action['added_delay']
                         })
                     padding_idx += 1
                 elif action['action'] == 'inserting' and inserted_pkts < args.attack_insert_pkts:
                     new_actions.append({
                         'action': 'inserting',
-                        'value': int( base_insert_len ),
-                        'added_delay': base_delay
+                        'value': int( base_insert_len  * ( 1 + 0.5*np.random.rand())),
+                        'added_delay': base_delay *( 1 + 0.5*np.random.rand())
                     })
                     inserted_pkts += 1
                 else:
@@ -502,20 +507,23 @@ def fit_attack_intensity(attack_data, args):
                 if np.random.rand() < 3 * args.attack_insert_pkts / n and inserted_pkts < args.attack_insert_pkts:
                     new_actions.append({
                             'action': 'inserting',
-                            'value': int( base_insert_len ),
-                            'added_delay': base_delay
+                            'value': int( base_insert_len *( 1 + 0.5*np.random.rand())),
+                            'added_delay': base_delay *( 1 + 0.5*np.random.rand())
                         })
                     inserted_pkts += 1
             if inserted_pkts < args.attack_insert_pkts:
                 for i in range(args.attack_insert_pkts - inserted_pkts):
                     new_actions.append({
                         'action': 'inserting',
-                        'value': int( base_insert_len ),
-                        'added_delay': base_delay
+                        'value': int( base_insert_len *( 1 + 0.5*np.random.rand())),
+                        'added_delay': base_delay * ( 1 + 0.5*np.random.rand())
                     })
         new_n = len([action for action in new_actions if action['action'] == 'padding' or action['action'] == 'inaction'])
         assert new_n == n, f"new_n: {new_n}, n: {n}"
         
+        # print(new_actions)
+        # print(choice)
+        # exit(0)
         processed_flows.append({
             'actions': new_actions,
             'source_file': flow['source_file']
@@ -534,7 +542,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", type=str, default="untargeted", choices=["targeted", "untargeted"])
     parser.add_argument("--target", type=int, default=0, help="Target class for targeted attack")
-    # parser.add_argument("--config_path", type=str, default="config/config.json", help="Path to config file")
     parser.add_argument("--dataset", type=str, default="CICDOH20", choices=["CICDOH20", "CICIOT2023", "TIISSRC23"])
     parser.add_argument("--basic_feature_num", type=int, default=10, help="Number of basic features")
     parser.add_argument("--max_padding_length", type=int, default=100, help="Maximum padding length")
@@ -546,8 +553,8 @@ if __name__ == "__main__":
     parser.add_argument("--probability_threshold", type=float, default=0.9, help="Threshold for probability")
     parser.add_argument("--seed", type=int, default=7, help="Random seed")
     parser.add_argument("--budget_per_pkt", type=int, default=200, help="Budget per packet")
-    parser.add_argument("--attack_beta_length", type=float, default=100)
-    parser.add_argument("--attack_beta_time_ms", type=float, default=40)
+    parser.add_argument("--attack_beta_length", type=int, default=100)
+    parser.add_argument("--attack_beta_time_ms", type=int, default=40)
     parser.add_argument("--attack_pr_sel", type=float, default=0.15)
     parser.add_argument("--attack_r_additive_star", type=float, default=21.958)
     parser.add_argument("--attack_insert_pkts", type=int, default=2)
@@ -555,12 +562,6 @@ if __name__ == "__main__":
     
     np.random.seed(args.seed)
     args.delta = 0.01
-    # load config file
-    # with open(args.config_path, "r") as f:
-    #     config = json.load(f)
-    #     args.train_set = config["dataset"][args.dataset]["train"]
-    #     args.valid_set = config["dataset"][args.dataset]["valid"]
-    #     args.test_set = config["dataset"][args.dataset]["test"]
     args.train_set = f"./dataset/{args.dataset}/json/train.json"
     args.valid_set = f"./dataset/{args.dataset}/json/valid.json"
     args.test_set = f"./dataset/{args.dataset}/json/test.json"

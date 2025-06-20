@@ -1,0 +1,8 @@
+| Empirical Accuracy  0.812, Macro  0.769
+| Macro| precision  0.816| recall  0.769| f1  0.782
+
+| true label    0 | samples num    300 | accuracy  0.897 | precision  0.846 | recall  0.897 | f1  0.871 |    269      2     20      9 |
+| true label    1 | samples num    100 | accuracy  0.680 | precision  0.932 | recall  0.680 | f1  0.786 |      5     68     25      2 |
+| true label    2 | samples num    100 | accuracy  0.820 | precision  0.636 | recall  0.820 | f1  0.716 |     15      2     82      1 |
+| true label    3 | samples num    100 | accuracy  0.680 | precision  0.850 | recall  0.680 | f1  0.756 |     29      1      2     68 |
+| Average Accuracy  0.812 |

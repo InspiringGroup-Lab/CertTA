@@ -265,14 +265,14 @@ if __name__ == "__main__":
     # args setup
     parser = argparse.ArgumentParser(description="Amoeba Parser",
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--ROOT", type=str, default='.', help="The directory of Amoeba")
+    parser.add_argument("--ROOT", type=str, default='./', help="The directory of Amoeba")
     parser.add_argument("--exp_name", type=str, default="Amoeba_raw", help="experiment name")
     # parser.add_argument("--data_config", type=str, help="the json file of dataset paths")
     parser.add_argument("--dataset", type=str, default="CICDOH20", choices=["CICDOH20", "TIISSRC23"], help="dataset to use")
     parser.add_argument("--dis", type=str, default="df",
                         help="censoring classifier type, supports {'dt', 'rf', 'cumul', 'df', 'lstm', 'sdae'}")
     parser.add_argument("--trained_dis_path", type=str, default=None, help="path of trained censoring classifier")
-    parser.add_argument("--train_epochs", type=int, default=2,
+    parser.add_argument("--train_epochs", type=int, default=10,
                         help="epoch size to training censoring classifiers if a trained model is not provided")
     parser.add_argument("--encoder_path", type=str, help="trained StateEncoder path")
     parser.add_argument("--enc_dim", type=int, default=256, help="StateEncoder hidden dim")
@@ -300,7 +300,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--action_mode",
         type=str,
-        default="direction_limited",
+        default="padding_and_addition",
         help="""
             {`addition_only`, `direction_limited`, `direction_unlimited`, `padding_and_addition`} are supported.
         """
